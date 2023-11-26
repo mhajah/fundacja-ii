@@ -1,9 +1,15 @@
+<script setup>
+import burgerMenu from './burgerMenu.vue'
+</script>
+
 <template>
     <section class="navbar-main">
         <div class="navbar-main-logo">
             LOGO
         </div>
+    <burgerMenu/>
     </section>
+
 </template>
 
 <style scoped>

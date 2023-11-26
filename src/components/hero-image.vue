@@ -20,6 +20,7 @@ import navbar from './navbar.vue';
     position: relative;
     display: flex;
     color: white;
+    padding: 30px;
 }
 
 .hero-main-header {
