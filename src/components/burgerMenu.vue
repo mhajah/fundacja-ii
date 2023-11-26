@@ -1,29 +1,25 @@
 
-<script>
+<script setup>
 import { ref } from 'vue'
 
-var navOpen = ref(true);
-
-const toggleActive = () =>{
-  navOpen = !navOpen
-}
+const navOpen = ref(false)
 </script>
 <template>
 	<div id="sidemenu">
-  <button class="sidemenu__btn" v-on:click="toggleActive" v-bind:class="{active:navOpen}">
+  <button class="sidemenu__btn" @click="navOpen = !navOpen" v-bind:class="{active:navOpen}">
 			  <span class="top"></span>
 			  <span class="mid"></span>
 			  <span class="bottom"></span>
 		  </button>
   <transition name="translateX">
-	<nav v-show="true">
+	<nav v-if="navOpen">
 	  <div class="sidemenu__wrapper">
 		<ul class="sidemenu__list">
-		  <li class="sidemenu__item"><a href="">Top</a></li>
-		  <li class="sidemenu__item"><a href="">About</a></li>
-		  <li class="sidemenu__item"><a href="">Blog</a></li>
-		  <li class="sidemenu__item"><a href="">Work</a></li>
-		  <li class="sidemenu__item"><a href="">Link</a></li>
+		  <li class="sidemenu__item"><a href="">RAPORT</a></li>
+		  <li class="sidemenu__item"><a href="">DARCZYŃCY</a></li>
+		  <li class="sidemenu__item"><a href="">WSPOMÓŻ FUNDACJĘ</a></li>
+		  <li class="sidemenu__item"><a href="">STATUS</a></li>
+		  <li class="sidemenu__item"><a href="">KONTAKT</a></li>
 		</ul>
 	  </div>
 	</nav>
@@ -34,13 +30,16 @@ const toggleActive = () =>{
 <style scoped lang="scss">
 #sidemenu {
   nav {
-	  width: 200px;
-	  // height: calc(100% - #{$headerHeight} - #{$footerHeight});
-	  background: grey;
+	  width: 100vw;
+	  height: 92vh;
+	  background: black;
+
 	  position: fixed;
+	  margin-top: 8vh;
 	  top: 0;
 	  left: 0;
-	  z-index: 99;
+	  z-index: 999;
+	  text-align: center;
 	  // box-shadow: 2px 0 3px$grey-6;
 	  // overflow-y: scroll;
   }
@@ -50,7 +49,7 @@ const toggleActive = () =>{
 		  display: block;
 		  width: 50px;
 		  height: 50px;
-		  background: grey;
+		  background: black;
 		  border: none;
 		  position: relative;
 		  z-index: 100;
@@ -95,7 +94,7 @@ const toggleActive = () =>{
 	  }
 
 	  &__wrapper {
-	padding-top: 50px;
+	padding-top: 5px;
   }
 
 	  &__list {
@@ -106,18 +105,19 @@ const toggleActive = () =>{
 	  }
 
 	  &__item {
-		  a {
+	a {
 	  text-decoration: none;
-			  line-height: 1.6em;
-			  font-size: 1.6em;
-			  padding: .5em;
-			  display: block;
-			  color: white;
-			  transition: .4s ease;
-
+			line-height: 1.6em;
+			padding: .5em;
+			display: block;
+			color: white;
+			transition: .4s ease;
+			font-family: 'Exo 2';
+			font-weight: 600;
+			font-size: 21px;	
 			  &:hover {
-				  background: lightgrey;
-				  color: dimgrey;
+				  background: black;
+				  color: #B60D18;
 			  }
 		  }
 	  }
