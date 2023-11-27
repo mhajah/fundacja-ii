@@ -1,3 +1,3 @@
-npm install @egjs/vue3-flicking
-npm install @egjs/flicking-plugins
-npm install scss
+npm install vite
+
+npm install vue-router@4 --save

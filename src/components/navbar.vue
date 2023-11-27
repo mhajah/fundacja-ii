@@ -7,6 +7,13 @@ import burgerMenu from './burgerMenu.vue'
         <div class="navbar-main-logo">
             #/STRONA_GŁÓWNA
         </div>
+        <ul class="list-menu">
+          <li class="list-menu-el"><router-link class="link" to="">RAPORT</router-link></li>
+		  <li class="list-menu-el"><router-link class="link" to="">DARCZYŃCY</router-link></li>
+		  <li class="list-menu-el"><router-link class="link" to="">WSPOMÓŻ FUNDACJĘ</router-link></li>
+		  <li class="list-menu-el"><router-link class="link" to="">STATUS</router-link></li>
+		  <li class="list-menu-el"><router-link class="link" to="/kontakt">KONTAKT</router-link></li>
+        </ul>
         <burgerMenu class="burger-menu"/>
     </section>
 
@@ -33,7 +40,24 @@ import burgerMenu from './burgerMenu.vue'
 .burger-menu {
     margin-right: 15px;
 }
-
-
-
+.list-menu {
+     visibility: hidden;
+}
+@media (min-width: 600px) {
+    
+}
+@media (min-width: 768px) {
+    .burger-menu {
+        visibility: hidden;
+        position: absolute;
+    }
+    .list-menu {
+        visibility:visible;
+        display: flex;
+        margin-right: 15px;
+    }
+    .list-menu-el {
+        margin-left: 15px;
+    }
+}
 </style>

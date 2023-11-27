@@ -15,11 +15,11 @@ const navOpen = ref(false)
 	<nav v-if="navOpen">
 	  <div class="sidemenu__wrapper">
 		<ul class="sidemenu__list">
-		  <li class="sidemenu__item"><a href="">RAPORT</a></li>
-		  <li class="sidemenu__item"><a href="">DARCZYŃCY</a></li>
-		  <li class="sidemenu__item"><a href="">WSPOMÓŻ FUNDACJĘ</a></li>
-		  <li class="sidemenu__item"><a href="">STATUS</a></li>
-		  <li class="sidemenu__item"><a href="">KONTAKT</a></li>
+		  <li class="sidemenu__item"><router-link class="link" to="playground">RAPORT</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="playground">DARCZYŃCY</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="playground">WSPOMÓŻ FUNDACJĘ</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="playground">STATUS</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="playground">KONTAKT</router-link></li>
 		</ul>
 	  </div>
 	</nav>
@@ -105,7 +105,7 @@ const navOpen = ref(false)
 	  }
 
 	  &__item {
-	a {
+	.link {
 	  text-decoration: none;
 			line-height: 1.6em;
 			padding: .5em;

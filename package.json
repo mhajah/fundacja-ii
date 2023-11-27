@@ -13,6 +13,7 @@
     "@egjs/vue3-flicking": "^4.11.1",
     "sass": "^1.69.5",
     "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
     "vueperslides": "^3.5.1"
   },
   "devDependencies": {

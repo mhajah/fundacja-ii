@@ -1,0 +1,3 @@
+<template>
+    Nie znaleziono strony...
+</template>
