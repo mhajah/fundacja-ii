@@ -20,6 +20,9 @@ import burgerMenu from './burgerMenu.vue'
 </template>
 
 <style scoped>
+.pbar {
+    z-index: 999;
+}
 .navbar-main {
     position: fixed;
     top: 0;
