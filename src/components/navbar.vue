@@ -25,7 +25,7 @@ import burgerMenu from './burgerMenu.vue'
     top: 0;
     left: 0;
     height: 8vh;
-    width: 100vw;
+    width: 100%;
     z-index: 99;
     background-color: black;
     color: white;
@@ -50,6 +50,7 @@ import burgerMenu from './burgerMenu.vue'
     .burger-menu {
         visibility: hidden;
         position: absolute;
+        margin:0;
     }
     .list-menu {
         visibility:visible;
