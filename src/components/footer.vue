@@ -17,13 +17,14 @@
                     <span>KRS</span> 123412312
                 </li>
                 <li>
-                    <span>NIP</span> 123412312
+
+                    <span>@</span> fundacja@edu.uwr.pl
                 </li>
                 <li>
                     <span>REGON</span> 123412312
                 </li>
                 <li>
-                    <span>@</span> fundacja@edu.uwr.pl
+                    <span>NIP</span> 123412312
                 </li>
             </ul>
         </div>
@@ -41,6 +42,7 @@
     align-items: center;
     border-top: 1px solid rgb(202, 202, 202);
     padding-top: 20px;
+    background-color: #fff;
 }
 
 h6 {
@@ -55,7 +57,6 @@ hr {
 
 .footer-top {
     margin: 10px 55px 10px 55px;
-    font-size: 1rem;
     text-align: center;
 }
 
@@ -69,13 +70,12 @@ hr {
 
 .footer-mid {
     margin: 10px 55px 10px 55px;
-    font-size: 1rem;
     text-align: center;
 }
 
 .footer-mid ul {
     display: grid;
-    grid-template-columns: repeat(2, 40vw [col-start]);
+    grid-template-columns: repeat(2, 45vw [col-start]);
     grid-template-rows: 50px 50px; 
     justify-content: center;   
     align-items: center;
@@ -84,6 +84,37 @@ hr {
 
 span {
     color: rgb(181, 13, 24);
+}
+
+
+@media (max-width: 400px) {
+    .footer-main {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-main {
+        font-size: 18px;
+    }
+    .footer-top ul {
+        grid-template-columns: repeat(2, 20vw [col-start]);
+    }
+    .footer-mid ul {
+        grid-template-columns: repeat(2, 20vw [col-start]);
+    }
+}
+
+@media (min-width: 1600px) {
+    .footer-main {
+        font-size: 21px;
+    }
+    .footer-top ul {
+        grid-template-columns: repeat(2, 15vw [col-start]);
+    }
+    .footer-mid ul {
+        grid-template-columns: repeat(2, 15vw [col-start]);
+    }
 }
 
 </style>

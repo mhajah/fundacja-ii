@@ -14,7 +14,7 @@ import burgerMenu from './burgerMenu.vue'
 		  <li class="list-menu-el"><router-link class="link" to="/statut">STATUT</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" to="/kontakt">KONTAKT</router-link></li>
         </ul>
-        <burgerMenu color="black" fontColor="white" class="burger-menu"/>
+        <burgerMenu color="#ebebeb" fontColor="#222222" class="burger-menu"/>
     </section>
 
 </template>
@@ -28,11 +28,12 @@ import burgerMenu from './burgerMenu.vue'
     height: 8vh;
     width: 100%;
     z-index: 99;
-    background-color: black;
-    color: white;
+    background-color: #ebebeb;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
 }
 .navbar-main-logo {
     margin-left: 15px;
@@ -50,7 +51,7 @@ import burgerMenu from './burgerMenu.vue'
         width: 100vw;
     }
     .list-menu {
-     position: absolute;
+        position: absolute;
     }
 }
 
@@ -67,32 +68,35 @@ import burgerMenu from './burgerMenu.vue'
     }
     .list-menu-el {
         margin-left: 30px;
-
     }
-    .navbar-main-logo::after {
+
+    .navbar-main-logo {
+        margin: 0;
+    }
+
+    .list-menu-el,
+    .navbar-main-logo {
+        display: inline-block;
+        line-height: 8vh;
+        transition: 250ms;
+    }
+
+    .navbar-main-logo:after,
+    .list-menu-el:after {
+        display:block;
         content: '';
-    display: block;
-    width: 0;
-    padding-bottom: 20px;
-    height: 1px;
-    border-bottom: 1px solid red;
-    transition: all .3s;
+        border-bottom: solid 1px #B60D18;  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
     }
 
-    .list-menu-el::after {
-    content: '';
-    display: block;
-    width: 0;
-    padding-bottom: 20px;
-    height: 1px;
-    border-bottom: 1px solid red;
-    transition: all .3s;
+    .list-menu-el:hover:after,
+    .navbar-main-logo:hover:after {
+        transform: scaleX(1);
     }
 
-    .list-menu-el:hover::after {
-        width: 100%;
-        border-bottom: 1px solid red;
-        transition: all .3s;
+    .list-menu-el:hover, .navbar-main-logo:hover {
+        color: #B60D18;
     }
 
     /* .list-menu-el:hover {
@@ -104,12 +108,12 @@ import burgerMenu from './burgerMenu.vue'
     .navbar-main {
         /*background: rgb(2,0,36);*/
         /*background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,0,0,0.7469188358937324) 100%);*/
-        position: absolute;
-        background: inherit;
-        text-shadow: #000 2px 0 20px;
+        position: fixed;
+        background-color: #fff;
+        display: flex;
         justify-content: space-around;
         font-size: 20px;
-        margin-top: 30px;
+        box-shadow: 0px 16px 31px -30px rgba(66, 68, 90, 1);
     }
 }
 </style>

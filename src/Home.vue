@@ -4,36 +4,38 @@ import Footer  from './components/footer.vue'
 </script>
 
 <template>
-  <HeroImage/>
+  <HeroImage class="HeroImage"/>
   <main class="main-section" >
-    
-    <div id="contact-anch"></div>
-    <div class="descriptions">
+    <section class="main-mid">
       
-      <h3 class="main-header3">KRÓTKO O NAS</h3>
-      <p class="main-paragraph">Opis fundacji. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
-        Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
-        Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
-      </p>
-    </div>
-    <div class="descriptions desc2">
-      <h3 class="main-header3">NASZE AKTYWNOŚCI</h3>
-      <p class="main-paragraph">Opis fundacji. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
-        Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
-        Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
-      </p>
-    
-    </div>
+      <div id="contact-anch"></div>
+      <div class="descriptions">
+        
+        <h3 class="main-header3">KRÓTKO O NAS</h3>
+        <p class="main-paragraph">Opis fundacji. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
+          Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
+          Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
+        </p>
+      </div>
+      <div class="descriptions desc2">
+        <h3 class="main-header3">NASZE AKTYWNOŚCI</h3>
+        <p class="main-paragraph">Opis fundacji. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
+          Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
+          Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
+        </p>
+      
+      </div>
 
-    <div class="descriptions">
-      <h3 class="main-header3">INFORMACJE DLA RODZICÓW</h3>
-      <p class="main-paragraph">Informacje dla rodziców. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
-        Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
-        Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
-      </p>
-    </div>
+      <div class="descriptions">
+        <h3 class="main-header3">INFORMACJE DLA RODZICÓW</h3>
+        <p class="main-paragraph">Informacje dla rodziców. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
+          Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
+          Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
+        </p>
+      </div>
+    </section>
     
-    <div class="descriptions desc2">
+    <div class="sponsor-section desc2">
       <h3 class="main-header3">PARTNERZY I SPONSORZY</h3>
       <section class="sponsors">
         <a href="" class="sponsor-link">
@@ -78,6 +80,7 @@ import Footer  from './components/footer.vue'
 }
 .descriptions {
   padding: 30px 15px 20px 15px;
+  font-weight: 300;
 }
 .main-paragraph {
   margin-top: 15px;
@@ -97,9 +100,13 @@ import Footer  from './components/footer.vue'
   color: #222;
 }
 
+.sponsor-section {
+  padding: 30px 15px 20px 15px;
+}
+
 .sponsors {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 
 
@@ -107,22 +114,61 @@ import Footer  from './components/footer.vue'
 .sponsor-logo {
   background-repeat: no-repeat;
   background-position: center;
-  width: calc(50vw - 30px);
-  height: calc(50vw - 30px);
+  width: 45vw;
+  max-width: 250px;
+  max-height: 250px;
+  height: 45vw;
   background-size: contain;
 }
 
-@media (min-width: 1200px) {
+
+@media (min-width: 1100px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  .main-mid {
+    background-color: #fff;
+    position: relative;
+    top: -10vh;
+    width: 50vw;
+    align-self: center;
+    border-top: 3px solid #B60D18;
+  }
   .descriptions {
-    margin-right: 400px;
-    margin-left: 400px;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    line-height: 32px;
+  }
+
+  .desc2 {
+    background-color: #fff;
+  }
+  .sponsor-section {
+    background-color: #f5f5f5;
   }
   .main-section {
-    font-size: 18px;
+    font-size: 17px;
   }
   .main-header3 {
     text-align: center;
     font-size: 24px;
+  }
+  .sponsor-logo {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .sponsor-logo {
+    width: 220px;
+    height: 220px;
+  }
+  .main-header3 {
+    font-size: 28px;
   }
 }
 

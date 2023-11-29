@@ -28,11 +28,11 @@ import navbar from './navbar.vue';
 }
 
 .hero-main-header {
-    font-size: 36px;
+    font-size: 30px;
     font-family: 'Exo 2';
     width: 100%;
     text-align: center;
-    line-height: 48px;
+    line-height: 36px;
     font-weight: 600;
 }
 
@@ -48,7 +48,23 @@ import navbar from './navbar.vue';
     text-align: center;
 }
 
-@media (min-width: 1200px) {
+
+@media (max-width: 1100px) {
+  .hero-main-header {
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 336px) {
+    #hero-main {
+        padding: 15px;
+    }
+    .hero-main-header {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1100px) {
     .hero-main-header {
         font-size: 60px;
         line-height: normal;

@@ -2,7 +2,21 @@
 <script setup>
 import { ref } from 'vue'
 
+const props = defineProps({
+	color: String,
+	fontColor: String
+})
+
 const navOpen = ref(false)
+</script>
+
+<script>
+export default {
+	props: {
+	  color: String,
+	  fontColor: String
+	}
+}
 </script>
 <template>
 	<div id="sidemenu">
@@ -18,8 +32,8 @@ const navOpen = ref(false)
 		  <li class="sidemenu__item"><router-link class="link" to="playground">RAPORT</router-link></li>
 		  <li class="sidemenu__item"><router-link class="link" to="playground">DARCZYŃCY</router-link></li>
 		  <li class="sidemenu__item"><router-link class="link" to="playground">WSPOMÓŻ FUNDACJĘ</router-link></li>
-		  <li class="sidemenu__item"><router-link class="link" to="playground">STATUS</router-link></li>
-		  <li class="sidemenu__item"><router-link class="link" to="playground">KONTAKT</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="playground">STATUT</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="kontakt">KONTAKT</router-link></li>
 		</ul>
 	  </div>
 	</nav>
@@ -32,7 +46,7 @@ const navOpen = ref(false)
   nav {
 	  width: 100vw;
 	  height: 92vh;
-	  background: black;
+	  background: v-bind(color);
 
 	  position: fixed;
 	  margin-top: 8vh;
@@ -49,7 +63,7 @@ const navOpen = ref(false)
 		  display: block;
 		  width: 50px;
 		  height: 50px;
-		  background: black;
+		  background: v-bind(color);
 		  border: none;
 		  position: relative;
 		  z-index: 100;
@@ -62,7 +76,7 @@ const navOpen = ref(false)
 			  width: 20px;
 			  height: 2px;
 			  margin: auto;
-			  background: white;
+			  background: v-bind(fontColor);
 			  position: absolute;
 			  top: 0;
 			  bottom: 0;
@@ -110,7 +124,7 @@ const navOpen = ref(false)
 			line-height: 1.6em;
 			padding: .5em;
 			display: block;
-			color: white;
+			color: v-bind(fontColor);
 			transition: .4s ease;
 			font-family: 'Exo 2';
 			font-weight: 600;
