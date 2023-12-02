@@ -1,5 +1,26 @@
 <script setup>
 import burgerMenu from './burgerMenu.vue'
+import { ref } from 'vue'
+
+const props = defineProps({
+    kontakt1: String,
+    kontakt2: String,
+    kontakt3: String,
+    kontakt4: String,
+	kontakt5: String,
+})
+</script>
+<script>
+export default {
+	props: {
+        kontakt1: String,
+        kontakt2: String,
+        kontakt3: String,
+        kontakt4: String,
+        kontakt5: String,
+	}
+}
+
 </script>
 
 <template>
@@ -8,18 +29,20 @@ import burgerMenu from './burgerMenu.vue'
             <router-link class="link" to="/">#/STRONA_GŁÓWNA</router-link>
         </div>
         <ul class="list-menu">
-          <li class="list-menu-el"><router-link class="link" to="/raport">RAPORT</router-link></li>
-		  <li class="list-menu-el"><router-link class="link" to="/darczyncy">DARCZYŃCY</router-link></li>
-		  <li class="list-menu-el"><router-link class="link" to="/wspomoz">WSPOMÓŻ FUNDACJĘ</router-link></li>
-		  <li class="list-menu-el"><router-link class="link" to="/statut">STATUT</router-link></li>
-		  <li class="list-menu-el"><router-link class="link" to="/kontakt">KONTAKT</router-link></li>
+          <li class="list-menu-el"><router-link v-bind:class="(kontakt1)?'k5':''" class="link" to="/raport">RAPORT</router-link></li>
+		  <li class="list-menu-el"><router-link v-bind:class="(kontakt2)?'k5':''" class="link" to="/darczyncy">DARCZYŃCY</router-link></li>
+		  <li class="list-menu-el"><router-link v-bind:class="(kontakt3)?'k5':''" class="link" to="/wspomoz">WSPOMÓŻ FUNDACJĘ</router-link></li>
+		  <li class="list-menu-el"><router-link v-bind:class="(kontakt4)?'k5':''" class="link" to="/statut">STATUT</router-link></li>
+		  <li class="list-menu-el"><router-link v-bind:class="(kontakt5)?'k5':''" class="link" to="/kontakt">KONTAKT</router-link></li>
         </ul>
         <burgerMenu color="#ebebeb" fontColor="#222222" class="burger-menu"/>
     </section>
 
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
+$color-child: v-bind(child);
 
 .navbar-main {
     position: fixed;
@@ -52,6 +75,12 @@ import burgerMenu from './burgerMenu.vue'
     }
     .list-menu {
         position: absolute;
+    }
+}
+
+@media (min-width: 750px) {
+    .navbar-main {
+        font-size: 21px;
     }
 }
 
@@ -115,5 +144,11 @@ import burgerMenu from './burgerMenu.vue'
         font-size: 20px;
         box-shadow: 0px 16px 31px -30px rgba(66, 68, 90, 1);
     }
+
+    .k5 {
+        color: #B60D18;
+    }
+
+
 }
 </style>

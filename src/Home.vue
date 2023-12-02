@@ -76,7 +76,7 @@ import Footer  from './components/footer.vue'
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 .main-section {
-  font-size: 18px;
+  font-size: 16px;
 }
 .descriptions {
   padding: 30px 15px 20px 15px;

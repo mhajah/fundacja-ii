@@ -5,29 +5,31 @@ import Footer from './components/footer.vue'
 </script>
 
 <template>
-    <navbar class=".navbar"/>
+    <navbar kontakt4="1" class=".navbar"/>
     <section class="mini_hero">
       <h4>STATUT</h4>
     </section>
-    <section class="statut">
+    <div class="status-wrapper">
       <h5>STATUT FUNDACJI ABSOLWENTÓW INFORMATYKI UNIWERSYTETU WROCŁAWSKIEGO</h5>
-      <div class="chapter">
-        <h6>Rozdział 1</h6>
-        <p>§ 1.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p>§ 2.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-      <div class="chapter">
-        <h6>Rozdział 2</h6>
-        <p>§ 3.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p>§ 4.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-      </div>
-    </section>
+      <section class="statut">
+        <div class="chapter">
+          <h6>Rozdział 1</h6>
+          <p class="paragraph">§ 1.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p class="paragraph">§ 2.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div class="chapter">
+          <h6>Rozdział 2</h6>
+          <p class="paragraph">§ 3.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p class="paragraph">§ 4.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+      </section>
+    </div>
     <Footer />
 
 </template>
@@ -68,6 +70,20 @@ import Footer from './components/footer.vue'
   font-weight: 600;
 }
 
+.status-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #f5f5f5;
+}
+
+.status-wrapper > h5 {
+  text-align: center;
+  padding: 40px 30px 0 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
 
 
 .chapter > h6 {
@@ -81,5 +97,74 @@ import Footer from './components/footer.vue'
   font-weight: 300;
   text-align: justify;
 }
+
+@media (min-width: 768px) {
+
+  .mini_hero > h4 {
+    font-size: 36px;
+  }
+  .contact {
+    font-size: 24px;
+  }
+  .contact-sec > a {
+    font-size: 18px;
+    width: 250px;
+  }
+}
+@media (min-width: 950px) {
+  .mini_hero {
+    background: none;
+    border: none;
+    background-color: #f5f5f5;
+    height: 16vh;
+  }
+  .mini_hero > h4 {
+    color: #222;
+    letter-spacing: normal;
+  }
+
+  .statut {
+    display: flex;
+    border-top: 3px solid #B60D18;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin: 40px 0;
+    padding-top: 20px;
+  }
+
+  .status-wrapper > h5 {
+    padding: 0;
+    font-size: 24px;
+    width: 550px;
+  }
+
+  h6 {
+    color:#B60D18;
+  }
+
+  .paragraph {
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media (min-width: 1750px) { 
+  .statut {
+    width: 50vw;
+  }
+  .status-wrapper > h5 {
+    font-size: 28px;
+    width: 700px;
+  }
+}
+
+@media (min-width: 2100px ){
+  .mini_hero > h4 {
+    font-size: 44px;
+  }
+}
+
 
 </style>

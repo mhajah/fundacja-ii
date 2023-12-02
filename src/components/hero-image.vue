@@ -5,12 +5,15 @@ import navbar from './navbar.vue';
 <template>
     <navbar class="navbar" />
     <section id="hero-main">
-        <h1 class="hero-main-header">Fundacja Absolwentów Informatyki Uniwersytetu Wrocławskiego</h1>
+        <Transition name="fade" appear>
+            <h1 class="hero-main-header">Fundacja Absolwentów Informatyki Uniwersytetu Wrocławskiego</h1>
+        </Transition>
     </section>
     
 </template>
 
 <style scoped>
+
 #hero-main {
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)) ,url("/instytut.jpg");

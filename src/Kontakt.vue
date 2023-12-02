@@ -5,7 +5,7 @@ import Footer from './components/footer.vue'
 </script>
 
 <template>
-    <navbar class=".navbar"/>
+    <navbar kontakt5="1" class="navbar"/>
     <section class="mini_hero">
       <h4>KONTAKT</h4>
     </section>
@@ -51,11 +51,6 @@ import Footer from './components/footer.vue'
 <style scoped lang="scss">
 * {
   font-family: 'Exo 2';
-}
-
-.navbar {
-  display: block;
-  position: relative;
 }
 
 .mini_hero {
@@ -191,6 +186,9 @@ import Footer from './components/footer.vue'
 }
 
 @media (min-width: 2100px) {
+  .mini_hero > h4 {
+    font-size: 44px;
+  }
   .contact {
     font-size: 28px;
   }

@@ -3,6 +3,7 @@ import burgerMenu from './burgerMenu.vue'
 </script>
 
 <template>
+    <Transition name="fade" appear>
     <section class="navbar-main">
         <div class="navbar-main-logo">
             <router-link class="link" to="/">#/STRONA_GŁÓWNA</router-link>
@@ -14,8 +15,10 @@ import burgerMenu from './burgerMenu.vue'
 		  <li class="list-menu-el"><router-link class="link" to="/statut">STATUT</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" to="/kontakt">KONTAKT</router-link></li>
         </ul>
+        
         <burgerMenu color="black" fontColor="white" class="burger-menu"/>
     </section>
+</Transition>
 
 </template>
 

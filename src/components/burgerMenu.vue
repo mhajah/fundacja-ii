@@ -29,10 +29,10 @@ export default {
 	<nav v-if="navOpen">
 	  <div class="sidemenu__wrapper">
 		<ul class="sidemenu__list">
-		  <li class="sidemenu__item"><router-link class="link" to="playground">RAPORT</router-link></li>
-		  <li class="sidemenu__item"><router-link class="link" to="playground">DARCZYŃCY</router-link></li>
-		  <li class="sidemenu__item"><router-link class="link" to="playground">WSPOMÓŻ FUNDACJĘ</router-link></li>
-		  <li class="sidemenu__item"><router-link class="link" to="playground">STATUT</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="raport">RAPORT</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="darczyncy">DARCZYŃCY</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="wspomoz">WSPOMÓŻ FUNDACJĘ</router-link></li>
+		  <li class="sidemenu__item"><router-link class="link" to="statut">STATUT</router-link></li>
 		  <li class="sidemenu__item"><router-link class="link" to="kontakt">KONTAKT</router-link></li>
 		</ul>
 	  </div>
@@ -130,7 +130,6 @@ export default {
 			font-weight: 600;
 			font-size: 21px;	
 			  &:hover {
-				  background: black;
 				  color: #B60D18;
 			  }
 		  }
