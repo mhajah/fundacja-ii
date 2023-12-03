@@ -8,6 +8,8 @@ import navbar from './navbar.vue';
         <Transition name="fade" appear>
             <h1 class="hero-main-header">Fundacja Absolwentów Informatyki Uniwersytetu Wrocławskiego</h1>
         </Transition>
+
+        <a href="" class="awesome"><font-awesome-icon icon="arrow-down"/></a>
     </section>
     
 </template>
@@ -16,7 +18,7 @@ import navbar from './navbar.vue';
 
 #hero-main {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)) ,url("/instytut.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)) ,url("/instytut.jpg");
     background-position: 85% 60%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,12 +33,11 @@ import navbar from './navbar.vue';
 }
 
 .hero-main-header {
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Exo 2';
     width: 100%;
     text-align: center;
     line-height: 36px;
-    font-weight: 600;
 }
 
 .hero-main-button {
@@ -49,6 +50,12 @@ import navbar from './navbar.vue';
     font-size: 18px;
     top: 35vh;
     text-align: center;
+}
+
+.awesome {
+    position: absolute;
+    top: 85vh;
+    font-size: 32px;
 }
 
 
@@ -67,11 +74,30 @@ import navbar from './navbar.vue';
     }
 }
 
+@media (min-width: 650px) {
+    .hero-main-header {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 850px) {
+    .hero-main-header {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+
 @media (min-width: 1100px) {
+    .awesome {
+        display: none;
+    }
     .hero-main-header {
         font-size: 60px;
         line-height: normal;
         padding: 30px 100px 30px 100px;
+        font-weight: 600;
     }
 }
 @media (min-width: 1600px) {
@@ -81,7 +107,7 @@ import navbar from './navbar.vue';
     }
 }
 
-@media (min-width: 1860px) {
+@media (min-width: 1825px) {
     .hero-main-header {
         font-size: 80px;
         padding: 30px 100px 30px 100px;
@@ -92,6 +118,13 @@ import navbar from './navbar.vue';
     .hero-main-header {
         font-size: 90px;
         padding: 30px 250px 30px 250px;
+    }
+}
+
+@media (min-width: 3000px) {
+    .hero-main-header {
+        font-size: 100px;
+        width: 70vw;
     }
 }
 

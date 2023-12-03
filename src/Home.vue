@@ -86,6 +86,7 @@ import Footer  from './components/footer.vue'
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: justify;
+  line-height: 30px;
 }
 .main-header3 {
   font-weight: 600;
@@ -133,7 +134,7 @@ import Footer  from './components/footer.vue'
     background-color: #fff;
     position: relative;
     top: -10vh;
-    width: 50vw;
+    width: 65vw;
     align-self: center;
     border-top: 3px solid #B60D18;
   }
@@ -163,9 +164,16 @@ import Footer  from './components/footer.vue'
 }
 
 @media (min-width: 1600px) {
+  .main-mid {
+    width: 55vw;
+  }
   .sponsor-logo {
     width: 220px;
     height: 220px;
+  }
+
+  .sponsor-section {
+    padding: 50px 30px;
   }
   .main-header3 {
     font-size: 28px;

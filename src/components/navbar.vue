@@ -114,5 +114,10 @@ import burgerMenu from './burgerMenu.vue'
         font-size: 20px;
         margin-top: 30px;
     }
+    @media (min-width: 3000px) {
+        .navbar-main {
+            font-size: 36px;
+        }
+    }
 }
 </style>

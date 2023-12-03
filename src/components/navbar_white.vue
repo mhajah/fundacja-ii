@@ -149,6 +149,15 @@ $color-child: v-bind(child);
         color: #B60D18;
     }
 
+    @media (min-width: 3000px) {
+        .navbar-main {
+            font-size: 36px;
+        }
+        .list-menu-el {
+            margin-left: 60px;
+        }
+    }
+
 
 }
 </style>

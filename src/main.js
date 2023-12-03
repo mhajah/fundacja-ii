@@ -12,10 +12,12 @@ import { FontAwesomeIcon } from '../node_modules/@fortawesome/vue-fontawesome'
 import { faLocationDot } from '../node_modules/@fortawesome/free-solid-svg-icons'
 import { faPhone } from '../node_modules/@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '../node_modules/@fortawesome/free-solid-svg-icons'
+import { faArrowDown } from '../node_modules/@fortawesome/free-solid-svg-icons'
 /* add icons to the library */
 library.add(faLocationDot)
 library.add(faPhone)
 library.add(faEnvelope)
+library.add(faArrowDown)
 
 
 createApp(App)
