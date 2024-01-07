@@ -17,7 +17,56 @@ import Footer  from './components/footer.vue'
           Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
         </p>
       </div>
-      <div class="descriptions desc2">
+
+      <!-- Newsy -->
+      <div class="descriptions">
+        <h3 class="main-header3">AKTUALNOŚCI</h3>
+        <a href="">
+          <div class="news">
+            <h6>Przykładowy tytuł newsa</h6>
+            <p>Przykładowa treść newsa / krótki opis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <div class="news-date-link">
+                <p class="news-date">21 grudzień 2023</p>
+                <p>Przeczytaj całość</p>
+              </div>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="news">
+            <h6>Przykładowy tytuł newsa</h6>
+            <p>Przykładowa treść newsa / krótki opis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <div class="news-date-link">
+                <p class="news-date">20 grudzień 2023</p>
+                <p>Przeczytaj całość</p>
+              </div>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="news">
+            <h6>Przykładowy tytuł newsa</h6>
+            <p>Przykładowa treść newsa / krótki opis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <div class="news-date-link">
+                <p class="news-date">19 grudzień 2023</p>
+                <p>Przeczytaj całość</p>
+              </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="news">
+            <h6>Przykładowy tytuł newsa</h6>
+            <p>Przykładowa treść newsa / krótki opis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <div class="news-date-link">
+                <p class="news-date">18 grudzień 2023</p>
+                <p>Przeczytaj całość</p>
+              </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="descriptions"> <!-- missing desc2 -->
         <h3 class="main-header3">NASZE AKTYWNOŚCI</h3>
         <p class="main-paragraph">Opis fundacji. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
           Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
@@ -109,8 +158,6 @@ import Footer  from './components/footer.vue'
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
-
 }
 .sponsor-logo {
   background-repeat: no-repeat;
@@ -120,6 +167,34 @@ import Footer  from './components/footer.vue'
   max-height: 250px;
   height: 45vw;
   background-size: contain;
+}
+
+.news {
+  background-color: #ebebeb;
+  padding: 15px 15px 5px 15px;
+  margin-top: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.news:hover {
+  color: #B60D18;
+  font-size: 17.5px;
+}
+
+.news h6 {
+  height: 50px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.news-date-link {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #878787;
+  margin-top: 30px;
+  padding: 10px 0;
+  color:#B60D18;
 }
 
 

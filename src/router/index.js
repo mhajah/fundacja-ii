@@ -4,6 +4,7 @@ import Kontakt from '../Kontakt.vue'
 import Statut from '../Statut.vue'
 import Darczyncy from '../Darczyncy.vue'
 import Playground from '../playground.vue'
+import Raport from '../Raport.vue'
 import PageNotFound from '../pagenotfound.vue'
 
 const routes = [
@@ -12,6 +13,7 @@ const routes = [
     {path: '/kontakt', name: 'Kontakt', component: Kontakt},
     {path: '/Statut', name: 'Statut', component: Statut},
     {path: '/darczyncy', name: 'Darczyncy', component: Darczyncy},
+    {path: '/raport', name: 'Raport', component: Raport},
     {path: '/:pathMatch(.*)*', component: PageNotFound}
 ]
 
