@@ -12,13 +12,38 @@ import Footer from './components/footer.vue'
     <section class="founders">
         <h5>DZIĘKUJEMY ZA WSPARCIE</h5>
         <div class="logos">
-            <a href="" class="founder-link"><div class="founder-box"><img src="/sponsor1.png" alt=""></div></a>
-            <a href="" class="founder-link"><div class="founder-box"><img src="https://cdn.freebiesupply.com/images/large/2x/google-logo-transparent.png" alt=""></div></a>
-            <a href="" class="founder-link"><div class="founder-box"><img src="https://download.logo.wine/logo/PKN_Orlen/PKN_Orlen-Logo.wine.png" alt=""></div></a>
-            <a href="" class="founder-link"><div class="founder-box"><img src="https://1000logos.net/wp-content/uploads/2021/05/Sony-logo.png" alt=""></div></a>
-            <a href="" class="founder-link"><div class="founder-box"><img src="https://purepng.com/public/uploads/large/purepng.com-intel-logologobrand-logoiconslogos-251519939644r68ft.png" alt=""></div></a>
-            <a href="" class="founder-link"><div class="founder-box"><img src="https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png" alt=""></div></a>
+            <div class="founder">
+              <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+              <h6>Jan Kowalski</h6>
+              <p>(jakiś tytuł) / opis</p>
+            </div>
+            <div class="founder">
+              <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+              <h6>Jan Kowalski</h6>
+              <p>(jakiś tytuł) / opis</p>
+            </div>
+            <div class="founder">
+              <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+              <h6>Jan Kowalski</h6>
+              <p>(jakiś tytuł) / opis</p>
+            </div>
+            <div class="founder">
+              <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+              <h6>Jan Kowalski</h6>
+              <p>(jakiś tytuł) / opis</p>
+            </div>
+            <div class="founder">
+              <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+              <h6>Jan Kowalski</h6>
+              <p>(jakiś tytuł) / opis</p>
+            </div>
+            <div class="founder">
+              <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+              <h6>Jan Kowalski</h6>
+              <p>(jakiś tytuł) / opis</p>
+            </div>
         </div>
+
     </section>
 
     <Footer />
@@ -71,31 +96,23 @@ import Footer from './components/footer.vue'
     justify-content: center;
 }
 
-.founder-box {
-    width: 45vw;
-    height: 40vw;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.founder > img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
-.founder-box > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.founder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px;
 }
 
-.founder-link {
-    border-bottom: 1px solid lightgray;
-}
-
-.founder-link:nth-child(2n+1) {
-    border-right: 1px solid lightgray;
-}
-
-.founder-link:nth-last-child(-n + 2) {
-    border-bottom: none;
+.founder > h6 {
+  font-weight: 900;
+  font-size: 18px;
+  padding: 5px 0;
 }
 
 
@@ -172,6 +189,19 @@ import Footer from './components/footer.vue'
     .founders > h5 {
         font-size: 28px;
     }   
+
+    .founder > img {
+      width: 125px;
+      height: 125px;
+    }
+
+    .founder {
+      margin: 20px 40px;
+    }
+
+    .founder > h6 {
+      font-size: 24px;
+    }
 }
 
 @media (min-width: 2100px) {
