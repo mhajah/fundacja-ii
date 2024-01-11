@@ -5,6 +5,7 @@ import Statut from '../Statut.vue'
 import Darczyncy from '../Darczyncy.vue'
 import Playground from '../playground.vue'
 import Raport from '../Raport.vue'
+import Wspomoz from '../Wspomoz.vue'
 import PageNotFound from '../pagenotfound.vue'
 
 const routes = [
@@ -14,6 +15,7 @@ const routes = [
     {path: '/Statut', name: 'Statut', component: Statut},
     {path: '/darczyncy', name: 'Darczyncy', component: Darczyncy},
     {path: '/raport', name: 'Raport', component: Raport},
+    {path: '/wspomoz', name: 'wspomoz', component: Wspomoz},
     {path: '/:pathMatch(.*)*', component: PageNotFound}
 ]
 

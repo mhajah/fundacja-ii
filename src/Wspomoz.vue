@@ -5,20 +5,20 @@ import Footer from './components/footer.vue'
 </script>
 
 <template>
-    <navbar kontakt1="1" class=".navbar"/>
+    <navbar kontakt3="1" class=".navbar"/>
     <section class="mini_hero">
-      <h4>RAPORT</h4>
+      <h4>WSPOMÓŻ FUNDACJĘ</h4>
     </section>
     <div class="status-wrapper">
-      <h5>Raport z naszych działań</h5>
+      <h5>DZIĘKUJEMY ZA KAŻDE WSPARCIE</h5>
       <section class="statut">
         <div class="chapter">
-          <h6>Lorem ipsum</h6>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
-          <p class="paragraph">§ 2.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <h6>Nasze działania możesz wesprzeć dokonując datek na jedno z poniższych kont:</h6>
+        <p class="account_number"><span>PLN</span> 88 1240 1473 1111 0011 2847 0067</p>
+        <p class="account_number"><span>CHF</span> 97 1240 1473 1797 0011 2847 1107</p>
+        <p class="account_number"><span>EUR</span> 65 1240 1473 1978 0011 2847 0878</p>
+        <p class="account_number"><span>USD</span> 94 1240 1473 1787 0011 2847 0982</p>
+        <p class="account_number"><span>GBP</span> 98 1240 1473 1789 0011 2847 1295</p>
         </div>
       </section>
     </div>
@@ -77,10 +77,11 @@ import Footer from './components/footer.vue'
   font-weight: 600;
 }
 
+
 .chapter > h6 {
   font-size: 18px;
-  text-align: center;
   margin: 15px 0 10px 0;
+  font-weight: 600;
 }
 
 .chapter {
@@ -89,7 +90,21 @@ import Footer from './components/footer.vue'
   text-align: justify;
 }
 
+p > span {
+    color: white;
+    font-weight: 900;
+    background-color: #B60D18;
+    padding: 5px;
+    border-radius: 25%;   
+}
+
+.account_number {
+    margin: 15px 0;
+}
+
+
 @media (min-width: 768px) {
+
   .mini_hero > h4 {
     font-size: 36px;
   }
@@ -131,10 +146,6 @@ import Footer from './components/footer.vue'
     width: 550px;
   }
 
-  h6 {
-    color:#B60D18;
-  }
-
   .paragraph {
     margin: 20px 0 10px 0;
   }
@@ -153,6 +164,12 @@ import Footer from './components/footer.vue'
 @media (min-width: 2100px ){
   .mini_hero > h4 {
     font-size: 44px;
+  }
+  .account_number {
+    font-size: 18px;;
+  }
+  .chapter > h6 {
+    font-size: 20px;
   }
 }
 

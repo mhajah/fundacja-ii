@@ -22,8 +22,11 @@
             <div class="footer-el">
                 <div class="footer-el-wrapper">
                     <h5>Dane bankowe</h5>
-                    <p>PKO BP</p>
-                    <p>12 5483 9349 2103 5842 3931</p>
+                    <p>PLN: 88 1240 1473 1111 0011 2847 0067</p>
+                    <p>CHF: 97 1240 1473 1797 0011 2847 1107</p>
+                    <p>EUR: 65 1240 1473 1978 0011 2847 0878</p>
+                    <p>USD: 94 1240 1473 1787 0011 2847 0982</p>
+                    <p>GBP: 98 1240 1473 1789 0011 2847 1295</p>
                 </div>
             </div>
             <div class="footer-el">
@@ -50,7 +53,7 @@
 
 .footer-el {
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .footer-el-wrapper > p {
@@ -90,7 +93,7 @@ hr {
 }
 
 .footer-mid {
-    margin: 10px 55px 10px 55px;
+    margin: 10px 45px 10px 45px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +113,10 @@ hr {
 
 span {
     color: rgb(181, 13, 24);
+}
+
+a:hover {
+    color: #B60D18;
 }
 
 
@@ -139,6 +146,7 @@ span {
         width: 17vw;
         display: flex;
         justify-content: center;
+        font-size: 14px;
     }
 
     .footer-main > h6 {
@@ -148,9 +156,7 @@ span {
     .footer-el-wrapper > h5 {
         font-size: 24px;
     }
-    .footer-el {
-        font-size: 16px;
-    }
+
 }
 
 @media (min-width: 1600px) {
