@@ -1,6 +1,8 @@
 <script setup>
 import HeroImage from './components/hero-image.vue'
 import Footer  from './components/footer.vue'
+import { useNewsStore } from './store.js';
+const newsStore = useNewsStore();
 </script>
 
 <template>
@@ -21,49 +23,17 @@ import Footer  from './components/footer.vue'
       <!-- Newsy -->
       <div class="descriptions">
         <h3 class="main-header3">AKTUALNOŚCI</h3>
-        <a href="">
-          <div class="news">
-            <h6>Przykładowy tytuł newsa</h6>
-            <p>Przykładowa treść newsa / krótki opis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              <div class="news-date-link">
-                <p class="news-date">21 grudzień 2023</p>
-                <p>Przeczytaj całość</p>
-              </div>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="news">
-            <h6>Przykładowy tytuł newsa</h6>
-            <p>Przykładowa treść newsa / krótki opis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              <div class="news-date-link">
-                <p class="news-date">20 grudzień 2023</p>
-                <p>Przeczytaj całość</p>
-              </div>
-          </div>
-        </a>
-
-        <a href="">
-          <div class="news">
-            <h6>Przykładowy tytuł newsa</h6>
-            <p>Przykładowa treść newsa / krótki opis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              <div class="news-date-link">
-                <p class="news-date">19 grudzień 2023</p>
-                <p>Przeczytaj całość</p>
-              </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="news">
-            <h6>Przykładowy tytuł newsa</h6>
-            <p>Przykładowa treść newsa / krótki opis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              <div class="news-date-link">
-                <p class="news-date">18 grudzień 2023</p>
-                <p>Przeczytaj całość</p>
-              </div>
-          </div>
-        </a>
-
+        <div v-for="news in newsStore.getLastNews()" class="news">
+          <router-link :to="'news/'+news.id">
+            
+              <h6>{{ news.title }}</h6>
+              <p>{{ news.content.slice(0, 3) + "..." }}</p>
+                <div class="news-date-link">
+                  <p class="news-date">21 grudzień 2023</p>
+                  <p>Przeczytaj całość</p>
+                </div>
+          </router-link>
+        </div>
       </div>
 
       <div class="descriptions"> <!-- missing desc2 -->
