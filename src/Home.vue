@@ -25,11 +25,11 @@ const newsStore = useNewsStore();
         <h3 class="main-header3">AKTUALNOŚCI</h3>
         <div v-for="news in newsStore.getLastNews()" class="news">
           <router-link :to="'news/'+news.id">
-            
-              <h6>{{ news.title }}</h6>
-              <p>{{ news.content.slice(0, 3) + "..." }}</p>
+              <img class="news-image" v-if="news.img" :src="news.img" alt="news cover">
+              <h6 class="news-header">{{ news.title }}</h6>
+              <p class="news-description">{{ news.content.slice(0, 120) + "..." }}</p>
                 <div class="news-date-link">
-                  <p class="news-date">21 grudzień 2023</p>
+                  <p class="news-date">{{ news.date }}</p>
                   <p>Przeczytaj całość</p>
                 </div>
           </router-link>
@@ -152,10 +152,14 @@ const newsStore = useNewsStore();
   font-size: 17.5px;
 }
 
-.news h6 {
+.news-header {
   height: 50px;
   font-size: 20px;
   font-weight: 900;
+}
+
+.news-description {
+  color:#282828;
 }
 
 .news-date-link {
@@ -167,6 +171,14 @@ const newsStore = useNewsStore();
   padding: 10px 0;
   color:#B60D18;
 }
+
+.news-image {
+  width: 100%;
+  height: 21vh;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
 
 
 @media (min-width: 1100px) {
@@ -207,6 +219,13 @@ const newsStore = useNewsStore();
     width: 190px;
     height: 190px;
   }
+
+  .news-image {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -223,6 +242,13 @@ const newsStore = useNewsStore();
   }
   .main-header3 {
     font-size: 28px;
+  }
+
+  .news-image {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    margin-bottom: 20px;
   }
 }
 

@@ -7,15 +7,18 @@ const newsStore = useNewsStore();
 
 <template>
     <navbar kontakt1="1" class=".navbar"/>
-    <section class="mini_hero">
-      <h4>News</h4>
-    </section>
+
     <div class="status-wrapper">
+      <h4>{{ newsStore.getNewsById($route.params.id).title }}</h4>
+      
+      <section v-if="newsStore.getNewsById($route.params.id).img" class="mini_hero">
+        <img :src="newsStore.getNewsById($route.params.id).img" alt="news cover">
+      </section>
+      <section class="date">{{ newsStore.getNewsById($route.params.id).date }}</section>
       <section class="statut">
         <div class="chapter">
-          <h6>Lorem ipsum</h6>
-          <div>
-            <h2>{{ newsStore.getNewsById($route.params.id).content }}</h2>
+          <div class="news-content" v-html="newsStore.getNewsById($route.params.id).content">
+            
           </div>
         </div>
       </section>
@@ -25,6 +28,8 @@ const newsStore = useNewsStore();
 </template>
 
 <style scoped lang="scss">
+
+
 * {
   font-family: 'Exo 2';
 }
@@ -34,17 +39,36 @@ const newsStore = useNewsStore();
   position: relative;
 }
 
-.mini_hero {
+h4 {
   margin-top: 8vh;
+  padding: 40px 0;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #f5f5f5;
+  font-weight: 900;
+}
+
+.date {
+  padding: 30px 20px;
+  margin: 10px;
+  background-color: #B60D18;
+  width: 95vw;
+  color: white;
+  text-align: center;
+}
+
+.mini_hero {
+  height: 25vh;
+  margin: 0 15px;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8));
+  width: 95vw;
+}
+
+.mini_hero img {
   width: 100%;
-  height: 30vh;
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)) ,url("/instytut.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 3px solid #B60D18;
+  height: 100%;
+  object-fit: cover;
 }
 
 .mini_hero > h4 {
@@ -55,7 +79,7 @@ const newsStore = useNewsStore();
 }
 
 .statut {
-  padding: 40px 30px 40px 30px;
+  padding: 40px 20px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -101,14 +125,19 @@ const newsStore = useNewsStore();
 }
 @media (min-width: 950px) {
   .mini_hero {
-    background: none;
-    border: none;
     background-color: #f5f5f5;
-    height: 16vh;
+    height: 40vh;
+    width: 700px;
   }
-  .mini_hero > h4 {
-    color: #222;
-    letter-spacing: normal;
+
+  h4 {
+    font-size: 40px;
+  }
+
+  .date {
+    width: 700px;
+    text-align: right;
+    margin: 0;
   }
 
   .statut {
@@ -119,7 +148,7 @@ const newsStore = useNewsStore();
     justify-content: center;
     align-items: center;
     width: 700px;
-    margin: 40px 0;
+    margin-bottom: 40px;
     padding-top: 20px;
   }
 
@@ -140,11 +169,29 @@ const newsStore = useNewsStore();
 
 @media (min-width: 1750px) { 
   .statut {
-    width: 50vw;
+    width: 60vw;
   }
+
+  h4 {
+    font-size: 48px;
+  }
+
+  .mini_hero {
+    width: 60vw;
+  }
+
+  .date {
+    width: 60vw;
+  }
+
   .status-wrapper > h5 {
     font-size: 28px;
     width: 700px;
+  }
+
+  .news-content {
+    padding: 20px 100px;
+    font-size: 16px;
   }
 }
 
