@@ -81,6 +81,7 @@ const newsStore = useNewsStore();
   </main>
 </template>
 
+
 <style scoped lang="scss">
 .logo {
   height: 6em;

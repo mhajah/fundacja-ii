@@ -9,10 +9,25 @@ import navbar from './navbar.vue';
             <h1 class="hero-main-header">Fundacja Absolwentów Informatyki Uniwersytetu Wrocławskiego</h1>
         </Transition>
 
-        <a href="" class="awesome"><font-awesome-icon icon="arrow-down"/></a>
+        <button ref="aboutus" @click="handleClick" class="awesome"><font-awesome-icon icon="arrow-down"/></button>
     </section>
     
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      ref: null
+    };
+  },
+  methods: {
+    handleClick() {
+      this.$refs.aboutus.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+};
+</script>
 
 <style scoped>
 
