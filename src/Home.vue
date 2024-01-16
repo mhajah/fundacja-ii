@@ -26,12 +26,15 @@ const newsStore = useNewsStore();
         <div v-for="news in newsStore.getLastNews()" class="news">
           <router-link :to="'news/'+news.id">
               <img class="news-image" v-if="news.img" :src="news.img" alt="news cover">
-              <h6 class="news-header">{{ news.title }}</h6>
-              <p class="news-description">{{ news.content.slice(0, 120) + "..." }}</p>
-                <div class="news-date-link">
-                  <p class="news-date">{{ news.date }}</p>
-                  <p>Przeczytaj całość</p>
-                </div>
+              <span v-else class="no-image-gap"></span>
+              <div class="news-content">
+                <h6 class="news-header">{{ news.title }}</h6>
+                <p class="news-description">{{ news.content.split(" ", 32).join(" ") + "..." }}</p>
+                  <div class="news-date-link">
+                    <p class="news-date">{{ news.date }}</p>
+                    <p>Przeczytaj całość</p>
+                  </div>
+              </div>
           </router-link>
         </div>
       </div>
@@ -99,7 +102,7 @@ const newsStore = useNewsStore();
   font-size: 16px;
 }
 .descriptions {
-  padding: 30px 15px 20px 15px;
+  padding: 30px 15px 0 15px;
   font-weight: 300;
 }
 .main-paragraph {
@@ -142,7 +145,6 @@ const newsStore = useNewsStore();
 
 .news {
   background-color: #ebebeb;
-  padding: 15px 15px 5px 15px;
   margin-top: 15px;
   transition: 0.5s ease-in-out;
 }
@@ -153,9 +155,9 @@ const newsStore = useNewsStore();
 }
 
 .news-header {
-  height: 50px;
   font-size: 20px;
   font-weight: 900;
+  padding-bottom: 10px;
 }
 
 .news-description {
@@ -179,7 +181,14 @@ const newsStore = useNewsStore();
   margin-bottom: 20px;
 }
 
+.news-content {
+  padding: 0 15px;
+}
 
+.no-image-gap {
+  height: 20px;
+  display: block;
+}
 
 @media (min-width: 1100px) {
   .main-section {
@@ -241,7 +250,8 @@ const newsStore = useNewsStore();
     padding: 50px 30px;
   }
   .main-header3 {
-    font-size: 28px;
+    font-size: 32px;
+    padding: 15px;
   }
 
   .news-image {

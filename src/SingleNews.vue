@@ -6,16 +6,19 @@ const newsStore = useNewsStore();
 </script>
 
 <template>
-    <navbar kontakt1="1" class=".navbar"/>
+    <navbar class=".navbar"/>
 
     <div class="status-wrapper">
-      <h4>{{ newsStore.getNewsById($route.params.id).title }}</h4>
       
       <section v-if="newsStore.getNewsById($route.params.id).img" class="mini_hero">
         <img :src="newsStore.getNewsById($route.params.id).img" alt="news cover">
       </section>
+      <section v-else class="mini_hero">
+        <img src="/instytutq.jpg" alt="news cover">
+      </section>
       <section class="date">{{ newsStore.getNewsById($route.params.id).date }}</section>
       <section class="statut">
+        <h4>{{ newsStore.getNewsById($route.params.id).title }}</h4>
         <div class="chapter">
           <div class="news-content" v-html="newsStore.getNewsById($route.params.id).content">
             
@@ -40,17 +43,15 @@ const newsStore = useNewsStore();
 }
 
 h4 {
-  margin-top: 8vh;
-  padding: 40px 0;
+  padding: 20px 0;
   font-size: 28px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #f5f5f5;
   font-weight: 900;
 }
 
 .date {
-  padding: 30px 20px;
+  padding: 20px 20px;
   margin: 10px;
   background-color: #B60D18;
   width: 95vw;
@@ -60,7 +61,7 @@ h4 {
 
 .mini_hero {
   height: 25vh;
-  margin: 0 15px;
+  margin: 8vh 15px 0 15px;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8));
   width: 95vw;
 }
@@ -79,7 +80,7 @@ h4 {
 }
 
 .statut {
-  padding: 40px 20px;
+  padding: 20px 15px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -111,6 +112,8 @@ h4 {
   text-align: justify;
 }
 
+
+
 @media (min-width: 768px) {
   .mini_hero > h4 {
     font-size: 36px;
@@ -127,27 +130,26 @@ h4 {
   .mini_hero {
     background-color: #f5f5f5;
     height: 40vh;
-    width: 700px;
+    width: 70vw;
   }
 
   h4 {
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .date {
-    width: 700px;
+    width: 70vw;
     text-align: right;
     margin: 0;
   }
 
   .statut {
     display: flex;
-    border-top: 3px solid #B60D18;
     background-color: #fff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 70vw;
     margin-bottom: 40px;
     padding-top: 20px;
   }
@@ -167,6 +169,12 @@ h4 {
   }
 }
 
+@media (min-width: 1300px) { 
+  h4 {
+    font-size: 32px;
+  }
+}
+
 @media (min-width: 1750px) { 
   .statut {
     width: 60vw;
@@ -174,10 +182,18 @@ h4 {
 
   h4 {
     font-size: 48px;
+    display:flex;
   }
 
   .mini_hero {
-    width: 60vw;
+    width: 100%;
+    height: 50vh;
+    margin-top: 8vh;
+  }
+
+
+  .date {
+    margin-top: -64px;
   }
 
   .date {
@@ -191,13 +207,17 @@ h4 {
 
   .news-content {
     padding: 20px 100px;
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
 @media (min-width: 2100px ){
   .mini_hero > h4 {
     font-size: 44px;
+  }
+  .news-content {
+    padding: 20px 100px;
+    font-size: 18px;
   }
 }
 
