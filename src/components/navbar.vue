@@ -78,7 +78,7 @@ import burgerMenu from './burgerMenu.vue'
     width: 0;
     padding-bottom: 20px;
     height: 1px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #B60D18;
     transition: all .3s;
     }
 
@@ -88,13 +88,13 @@ import burgerMenu from './burgerMenu.vue'
     width: 0;
     padding-bottom: 20px;
     height: 1px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #B60D18;
     transition: all .3s;
     }
 
     .list-menu-el:hover::after {
         width: 100%;
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid #B60D18;
         transition: all .3s;
     }
 
