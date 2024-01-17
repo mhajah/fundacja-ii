@@ -26,11 +26,11 @@ export default {
 <template>
     <section class="navbar-main">
         <div class="navbar-main-logo">
-            <router-link class="link" to="/">#/STRONA_GŁÓWNA</router-link>
+            <router-link class="link" to="/">Fundacja Absolwentów Informatyki UWr</router-link>
         </div>
         <ul class="list-menu">
           <li class="list-menu-el"><router-link v-bind:class="(kontakt1)?'k5':''" class="link" to="/raport">RAPORT</router-link></li>
-		  <li class="list-menu-el"><router-link v-bind:class="(kontakt2)?'k5':''" class="link" to="/darczyncy">DARCZYŃCY</router-link></li>
+		  <li class="list-menu-el"><router-link v-bind:class="(kontakt2)?'k5':''" class="link" to="/darczyncy">POSTACIE</router-link></li>
 		  <li class="list-menu-el"><router-link v-bind:class="(kontakt3)?'k5':''" class="link" to="/wspomoz">WSPOMÓŻ FUNDACJĘ</router-link></li>
 		  <li class="list-menu-el"><router-link v-bind:class="(kontakt4)?'k5':''" class="link" to="/statut">STATUT</router-link></li>
 		  <li class="list-menu-el"><router-link v-bind:class="(kontakt5)?'k5':''" class="link" to="/kontakt">KONTAKT</router-link></li>
@@ -56,7 +56,6 @@ $color-child: v-bind(child);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
 }
 .navbar-main-logo {
     margin-left: 15px;

@@ -14,10 +14,27 @@ const newsStore = useNewsStore();
       <div class="descriptions">
         
         <h3 class="main-header3">KRÓTKO O NAS</h3>
-        <p class="main-paragraph">Opis fundacji. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
-          Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
-          Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
-        </p>
+        <p class="main-paragraph">Fundacja powstała z inicjatywy absolwentów Instytutu Informatyki UWr i wspiera działania edukacyjne prowadzone przez Instytut na poziomie szkolnym i studenckim.</p>
+        <p class="main-paragraph">Nikt z nas nie urodził się programistą. Komputer był dla nas kiedyś tajemniczą skrzynką; później, maszynką do gier, zakupów, poznawania ludzi. Pamiętamy nasze pierwsze “hello, world!”, i dalszą drogę: lata spędzone na nauce, treningu, wyzwania pierwszych zawodów; pierwszy sprzedany kod, pierwszy projekt, zespół, firmę; pierwszych użytkowników i pierwsze duże pieniądze.</p>
+        <p class="main-paragraph">Pamiętamy że gdzieś na tej drodze pojawił się student, doktorant, a czasem nawet siwowłosy profesor UWr. Wiele zawdzięczamy ich pracy. Chcemy wspierać aktywności, w których sami kiedyś uczestniczyliśmy, i które pomogły nam odnieść sukces.</p>
+        <p class="main-paragraph activities">Fundacja zapewnia dodatkowe środki na organizację szerokiej gamy zajęć informatycznych:</p>
+        <ul class="activities-list">
+          <li><span>fakultety w liceach i szkołach podstawowych</span> są dla większości uczniów pierwszy kontakt z informatyką; fundacja pomaga w wynagrodzeniu prowadzących, którzy prowadzą uczniów od pierwszych kroków do medali Olimpiady Informatycznej.</li>
+          <li><span>sparingi i zawody</span> zapewniają niezbędny trening uczniom, którzy walczą o tytuły najlepszych programistów i programistek w kraju; fundacja dokłada się do kosztów przygotowania zadań i nagród dla uczestników.</li>
+          <li><span>obozy naukowe</span> gromadzą uczniów z różnych szkół i są czasem intensywnej pracy: początkujący wspólnie zdobywają podstawy informatycznego fachu, zaawansowani uczą się od siebie nawzajem i przygotowują do startu w zawodach; fundacja udziela stypendiów na pokrycie kosztów dla potrzebujących uczestników oraz wspiera finansowo wynagrodzenia kadry.</li>
+        </ul>
+      </div>
+
+      <div class="descriptions">
+        <h3 class="main-header3">DLA DARCZYŃCÓW</h3>
+        <p class="main-paragraph">Możesz wesprzeć naszą misję poprzez darowiznę; dziękujemy za każdą wpłaconą złotówkę. Chętnych do włączenia się w życie fundacji zachęcamy też do <router-link :to="'kontakt'" class="p-link">kontaktu</router-link>. Fundacja przeznacza całość otrzymanych środków na <router-link :to="'statut'" class="p-link">działalność statutową</router-link>, taką jak projekty opisane powyżej. Wpłaty można dokonywać na konta o numerach:</p>
+        <div class="account_numbers">
+          <p><span>PLN</span> 88 1240 1473 1111 0011 2847 0067</p>
+          <p><span>CHF</span> 97 1240 1473 1797 0011 2847 1107</p>
+          <p><span>EUR</span> 65 1240 1473 1978 0011 2847 0878</p>
+          <p><span>USD</span> 94 1240 1473 1787 0011 2847 0982</p>
+          <p><span>GBP</span> 98 1240 1473 1789 0011 2847 1295</p>
+        </div>
       </div>
 
       <!-- Newsy -->
@@ -37,23 +54,6 @@ const newsStore = useNewsStore();
               </div>
           </router-link>
         </div>
-      </div>
-
-      <div class="descriptions"> <!-- missing desc2 -->
-        <h3 class="main-header3">NASZE AKTYWNOŚCI</h3>
-        <p class="main-paragraph">Opis fundacji. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
-          Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
-          Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
-        </p>
-      
-      </div>
-
-      <div class="descriptions">
-        <h3 class="main-header3">INFORMACJE DLA RODZICÓW</h3>
-        <p class="main-paragraph">Informacje dla rodziców. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor consequat id porta nibh venenatis cras. Blandit libero volutpat sed cras ornare. Placerat duis ultricies lacus sed turpis. Amet consectetur adipiscing elit duis. Fringilla ut morbi tincidunt augue interdum velit euismod in. Vitae congue mauris rhoncus aenean vel elit scelerisque. Urna condimentum mattis pellentesque id. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Dolor magna eget est lorem ipsum dolor. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Et magnis dis parturient montes. Dolor magna eget est lorem ipsum. Ut sem nulla pharetra diam. Tortor posuere ac ut consequat semper viverra nam libero. Libero justo laoreet sit amet cursus sit amet dictum. 
-          Placerat vestibulum lectus mauris ultrices eros in cursus. Lectus proin nibh nisl condimentum id venenatis a condimentum. Egestas dui id ornare arcu. Nunc eget lorem dolor sed viverra ipsum nunc aliquet. Leo vel orci porta non pulvinar. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Cursus euismod quis viverra nibh. Dignissim suspendisse in est ante in. Ut tristique et egestas quis ipsum. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Dui ut ornare lectus sit amet est placerat. Vulputate mi sit amet mauris commodo quis imperdiet. Augue interdum velit euismod in pellentesque massa placerat. Elit sed vulputate mi sit amet mauris commodo quis imperdiet. Sed tempus urna et pharetra pharetra.
-          Nispretium fusce id velit ut tortor. Eget arcu dictum varius duis at consectetur lorem donec. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Amet mattis vulputate enim nulla aliquet. Odio aenean sed adipiscing diam donec adipiscing tristique risus nec. Egestas quis ipsum suspendisse ultrices gravida dictum. Semper quis lectus nulla at volutpat diam. Amet massa vitae tortor condimentum lacinia quis. Lobortis feugiat vivamus at augue eget arcu dictum varius. Justo donec enim diam vulputate ut pharetra sit amet. Ultrices sagittis orci a scelerisque purus semper. Mattis molestie a iaculis at. Pulvinar elementum integer enim neque volutpat ac tincidunt.
-        </p>
       </div>
     </section>
     
@@ -111,6 +111,29 @@ const newsStore = useNewsStore();
   text-align: justify;
   line-height: 30px;
 }
+
+.p-link {
+  color: #B60D18;
+  text-decoration: underline;
+}
+
+.activities {
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.activities-list {
+  text-align: justify;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+
+.activities-list > li > span {
+  color: #B60D18;
+  text-decoration: dashed;
+}
+
 .main-header3 {
   font-weight: 600;
   font-size: 24px;
@@ -190,6 +213,25 @@ const newsStore = useNewsStore();
   display: block;
 }
 
+.account_numbers {
+  margin-bottom: 15px;
+}
+
+.account_numbers > p {
+  margin: 8px 0;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.account_numbers > p > span {
+    color: white;
+    font-weight: 900;
+    background-color: #B60D18;
+    padding: 5px;
+    border-radius: 25%;
+    margin-right: 5px;   
+}
+
 @media (min-width: 1100px) {
   .main-section {
     display: flex;
@@ -259,6 +301,24 @@ const newsStore = useNewsStore();
     height: 35vh;
     object-fit: cover;
     margin-bottom: 20px;
+  }
+
+  .account_numbers {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+
+  .account_numbers > p {
+    margin-right: 50px;
+    width: 42%;
+  }
+}
+
+@media (min-width: 2100px) {
+  .account_numbers > p {
+    margin-right: 50px;
+    width: 32%;
   }
 }
 

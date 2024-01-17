@@ -33,7 +33,7 @@
                 <div class="footer-el-wrapper">
                     <h5>Odnośniki</h5>
                     <p><a href="/raport">RAPORT</a></p>
-                    <p><a href="/darczyncy">DARCZYŃCY</a></p>
+                    <p><a href="/darczyncy">POSTACIE</a></p>
                     <p><a href="/wesprzyj">WESPRZYJ FUNDACJĘ</a></p>
                     <p><a href="/statut">STATUT FUNDACJI</a></p>
                     <p><a href="/kontakt">SKONTAKTUJ SIĘ Z NAMI</a></p>

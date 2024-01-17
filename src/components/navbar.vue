@@ -6,11 +6,11 @@ import burgerMenu from './burgerMenu.vue'
     <Transition name="fade" appear>
     <section class="navbar-main">
         <div class="navbar-main-logo">
-            <router-link class="link" to="/">#/STRONA_GŁÓWNA</router-link>
+            <router-link class="link" to="/">Fundacja Absolwentów Informatyki UWr</router-link>
         </div>
         <ul class="list-menu">
           <li class="list-menu-el"><router-link class="link" to="/raport">RAPORT</router-link></li>
-		  <li class="list-menu-el"><router-link class="link" to="/darczyncy">DARCZYŃCY</router-link></li>
+		  <li class="list-menu-el"><router-link class="link" to="/darczyncy">POSTACIE</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" to="/wspomoz">WSPOMÓŻ FUNDACJĘ</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" to="/statut">STATUT</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" to="/kontakt">KONTAKT</router-link></li>
