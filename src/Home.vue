@@ -5,6 +5,11 @@ import { useNewsStore } from './store.js';
 const newsStore = useNewsStore();
 </script>
 
+<script>
+import { ref } from "vue";
+export const helpRef = ref(null);
+</script>
+
 <template>
   <HeroImage class="HeroImage"/>
   <main class="main-section" >
@@ -26,7 +31,7 @@ const newsStore = useNewsStore();
       </div>
 
       <div class="descriptions">
-        <h3 class="main-header3">DLA DARCZYŃCÓW</h3>
+        <h3 ref="helpRef" class="main-header3">DLA DARCZYŃCÓW</h3>
         <p class="main-paragraph">Możesz wesprzeć naszą misję poprzez darowiznę; dziękujemy za każdą wpłaconą złotówkę. Chętnych do włączenia się w życie fundacji zachęcamy też do <router-link :to="'kontakt'" class="p-link">kontaktu</router-link>. Fundacja przeznacza całość otrzymanych środków na <router-link :to="'statut'" class="p-link">działalność statutową</router-link>, taką jak projekty opisane powyżej. Wpłaty można dokonywać na konta o numerach:</p>
         <div class="account_numbers">
           <p><span>PLN</span> 88 1240 1473 1111 0011 2847 0067</p>

@@ -11,7 +11,7 @@ import burgerMenu from './burgerMenu.vue'
         <ul class="list-menu">
           <li class="list-menu-el"><router-link class="link" to="/raport">RAPORT</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" to="/darczyncy">POSTACIE</router-link></li>
-		  <li class="list-menu-el"><router-link class="link" to="/wspomoz">WSPOMÓŻ FUNDACJĘ</router-link></li>
+		  <li @click="handleClickHelp" class="list-menu-el">WSPOMÓŻ FUNDACJĘ</li>
 		  <li class="list-menu-el"><router-link class="link" to="/statut">STATUT</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" to="/kontakt">KONTAKT</router-link></li>
         </ul>
@@ -21,6 +21,21 @@ import burgerMenu from './burgerMenu.vue'
 </Transition>
 
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      ref: null
+    };
+  },
+  methods: {
+    handleClickHelp() {
+      this.$parent.$parent.$refs.helpRef.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+};
+</script>
 
 <style scoped>
 
