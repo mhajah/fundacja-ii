@@ -18,8 +18,9 @@ export default {
         kontakt3: String,
         kontakt4: String,
         kontakt5: String,
-	}
-}
+	},
+};
+
 
 </script>
 
@@ -30,8 +31,8 @@ export default {
         </div>
         <ul class="list-menu">
           <li class="list-menu-el"><router-link v-bind:class="(kontakt1)?'k5':''" class="link" to="/raport">RAPORT</router-link></li>
-		  <li class="list-menu-el"><router-link v-bind:class="(kontakt2)?'k5':''" class="link" to="/darczyncy">POSTACIE</router-link></li>
-		  <li class="list-menu-el"><router-link v-bind:class="(kontakt3)?'k5':''" class="link" to="/wspomoz">WSPOMÓŻ FUNDACJĘ</router-link></li>
+		  <li class="list-menu-el"><router-link v-bind:class="(kontakt2)?'k5':''" class="link" :to="{ path:'/', hash:'#founders'}">POSTACIE</router-link></li>
+		  <li class="list-menu-el"><router-link v-bind:class="(kontakt3)?'k5':''" class="link" :to="{ path:'/', hash:'#donate'}">WSPOMÓŻ FUNDACJĘ</router-link></li>
 		  <li class="list-menu-el"><router-link v-bind:class="(kontakt4)?'k5':''" class="link" to="/statut">STATUT</router-link></li>
 		  <li class="list-menu-el"><router-link v-bind:class="(kontakt5)?'k5':''" class="link" to="/kontakt">KONTAKT</router-link></li>
         </ul>
@@ -39,6 +40,7 @@ export default {
     </section>
 
 </template>
+
 
 <style scoped lang="scss">
 

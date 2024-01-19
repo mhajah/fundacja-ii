@@ -31,7 +31,7 @@ export const helpRef = ref(null);
       </div>
 
       <div class="descriptions">
-        <h3 ref="helpRef" class="main-header3">DLA DARCZYŃCÓW</h3>
+        <h3 ref="helpRef" class="main-header3" id="donate">DLA DARCZYŃCÓW</h3>
         <p class="main-paragraph">Możesz wesprzeć naszą misję poprzez darowiznę; dziękujemy za każdą wpłaconą złotówkę. Chętnych do włączenia się w życie fundacji zachęcamy też do <router-link :to="'kontakt'" class="p-link">kontaktu</router-link>. Fundacja przeznacza całość otrzymanych środków na <router-link :to="'statut'" class="p-link">działalność statutową</router-link>, taką jak projekty opisane powyżej. Wpłaty można dokonywać na konta o numerach:</p>
         <div class="account_numbers">
           <p><span>PLN</span> 88 1240 1473 1111 0011 2847 0067</p>
@@ -39,6 +39,13 @@ export const helpRef = ref(null);
           <p><span>EUR</span> 65 1240 1473 1978 0011 2847 0878</p>
           <p><span>USD</span> 94 1240 1473 1787 0011 2847 0982</p>
           <p><span>GBP</span> 98 1240 1473 1789 0011 2847 1295</p>
+        </div>
+      </div>
+
+      <div class="descriptions">
+        <h3 ref="foundersRef" class="main-header3" id="founders">POSTACIE</h3>
+        <p class="main-paragraph"></p>
+        <div class="account_numbers">
         </div>
       </div>
 
