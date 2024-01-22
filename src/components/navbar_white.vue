@@ -85,7 +85,7 @@ $color-child: v-bind(child);
     }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1050px) {
     .burger-menu {
         visibility: hidden;
         position: absolute;

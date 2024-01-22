@@ -30,8 +30,8 @@ export default {
 	  <div class="sidemenu__wrapper">
 		<ul class="sidemenu__list">
 		  <li class="sidemenu__item"><router-link class="link" to="raport">RAPORT</router-link></li>
-		  <li class="sidemenu__item"><router-link class="link" to="darczyncy">DARCZYŃCY</router-link></li>
-		  <li class="sidemenu__item"><router-link class="link" to="wspomoz">WSPOMÓŻ FUNDACJĘ</router-link></li>
+		  <li class="sidemenu__item"><router-link @click="navOpen = !navOpen" class="link" :to="{ path:'/', hash:'#founders'}">POSTACIE</router-link></li>
+		  <li class="sidemenu__item"><router-link @click="navOpen = !navOpen" class="link" :to="{ path:'/', hash:'#donate'}">WSPOMÓŻ FUNDACJĘ</router-link></li>
 		  <li class="sidemenu__item"><router-link class="link" to="statut">STATUT</router-link></li>
 		  <li class="sidemenu__item"><router-link class="link" to="kontakt">KONTAKT</router-link></li>
 		</ul>

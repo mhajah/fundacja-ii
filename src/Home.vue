@@ -68,31 +68,7 @@ export const helpRef = ref(null);
         </div>
       </div>
     </section>
-    
-    <div class="sponsor-section desc2">
-      <h3 class="main-header3">PARTNERZY I SPONSORZY</h3>
-      <section class="sponsors">
-        <a href="" class="sponsor-link">
-          <div class="sponsor-logo" style="background-image: url('/sponsor1.png')"></div>
-        </a>
-        <a href="" class="sponsor-link">
-          <div class="sponsor-logo" style="background-image: url('https://cdn.freebiesupply.com/images/large/2x/google-logo-transparent.png')"></div>
-        </a>
-        <a href="" class="sponsor-link">
-          <div class="sponsor-logo" style="background-image: url('https://download.logo.wine/logo/PKN_Orlen/PKN_Orlen-Logo.wine.png')"></div>
-        </a>
-        <a href="" class="sponsor-link">
-          <div class="sponsor-logo" style="background-image: url('https://1000logos.net/wp-content/uploads/2021/05/Sony-logo.png')"></div>
-        </a>
-        <a href="" class="sponsor-link">
-          <div class="sponsor-logo" style="background-image: url('https://purepng.com/public/uploads/large/purepng.com-intel-logologobrand-logoiconslogos-251519939644r68ft.png')"></div>
-        </a>
-        <a href="" class="sponsor-link">
-          <div class="sponsor-logo" style="background-image: url('https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png')"></div>
-        </a>
-      </section>
-    </div>
-    <Footer/>
+    <Footer class="footer"/>
   </main>
 </template>
 
@@ -242,6 +218,10 @@ export const helpRef = ref(null);
     padding: 5px;
     border-radius: 25%;
     margin-right: 5px;   
+}
+
+.footer {
+  margin-top: 30px;
 }
 
 @media (min-width: 1100px) {

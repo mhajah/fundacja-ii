@@ -6,6 +6,7 @@ import Footer from './components/footer.vue'
 
 <template>
     <navbar kontakt5="1" class="navbar"/>
+    <section class="gmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.868227002865!2d17.050502277165577!3d51.11089137172589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe82b2976c511%3A0x36e92b9161fb469a!2sInstytut%20Informatyki%20Uniwersytetu%20Wroc%C5%82awskiego!5e0!3m2!1spl!2spl!4v1705952809828!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
     <section class="mini_hero">
       <h4>KONTAKT</h4>
     </section>
@@ -71,6 +72,11 @@ import Footer from './components/footer.vue'
   font-size: 30px;
   font-weight: 600;
   letter-spacing: 3px;
+}
+
+.gmap {
+  visibility: hidden;
+  position: absolute;
 }
 
 .contact {
@@ -146,7 +152,7 @@ import Footer from './components/footer.vue'
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1050px) {
   hr {
     display: none;
     position: absolute;
@@ -156,6 +162,7 @@ import Footer from './components/footer.vue'
     border: none;
     background-color: #f5f5f5;
     height: 16vh;
+    margin-top: 0;
   }
 
   .contact {
@@ -182,6 +189,13 @@ import Footer from './components/footer.vue'
 
   .contactForm > form > textarea {
     height: 230px;
+  }
+
+  .gmap {
+    visibility: visible;
+    position: relative;
+    margin-top: 8vh;
+    width: 100%;
   }
 }
 

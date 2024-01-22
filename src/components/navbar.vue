@@ -10,8 +10,8 @@ import burgerMenu from './burgerMenu.vue'
         </div>
         <ul class="list-menu">
           <li class="list-menu-el"><router-link class="link" to="/raport">RAPORT</router-link></li>
-		  <li @click="handleClickFounders" class="list-menu-el"><a href="">POSTACIE</a></li>
-		  <li @click="handleClickHelp" class="list-menu-el"><a href="">WSPOMÓŻ FUNDACJĘ</a></li>
+		  <li class="list-menu-el"><router-link class="link" :to="{ path:'/', hash:'#founders'}">POSTACIE</router-link></li>
+		  <li class="list-menu-el"><router-link class="link" :to="{ path:'/', hash:'#donate'}">WSPOMÓŻ FUNDACJĘ</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" to="/statut">STATUT</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" to="/kontakt">KONTAKT</router-link></li>
         </ul>
