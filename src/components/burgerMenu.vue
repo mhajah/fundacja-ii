@@ -18,6 +18,9 @@ export default {
 	}
 }
 </script>
+
+
+
 <template>
 	<div id="sidemenu">
   <button class="sidemenu__btn" @click="navOpen = !navOpen" v-bind:class="{active:navOpen}">

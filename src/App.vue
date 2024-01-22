@@ -9,7 +9,6 @@ import Playground from './playground.vue'
 
 
 <template>
-  <VueScrollProgress></VueScrollProgress>
   <router-view></router-view>
 </template>
 

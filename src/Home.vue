@@ -11,7 +11,7 @@ export const helpRef = ref(null);
 </script>
 
 <template>
-  <HeroImage class="HeroImage"/>
+  <HeroImage/>
   <main class="main-section" >
     <section class="main-mid">
       
@@ -71,7 +71,6 @@ export const helpRef = ref(null);
     <Footer class="footer"/>
   </main>
 </template>
-
 
 <style scoped lang="scss">
 .logo {

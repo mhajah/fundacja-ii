@@ -3,7 +3,7 @@ import navbar from './navbar.vue';
 </script>
 
 <template>
-    <navbar class="navbar" />
+    <navbar id="nav" class="navbar" />
     <section id="hero-main">
         <Transition name="fade" appear>
             <h1 class="hero-main-header">Fundacja Absolwentów Informatyki Uniwersytetu Wrocławskiego</h1>
@@ -15,21 +15,48 @@ import navbar from './navbar.vue';
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      ref: null
-    };
-  },
-  methods: {
-    handleClick() {
-      this.$refs.aboutus.scrollIntoView({ behavior: 'smooth' });
+document.addEventListener("DOMContentLoaded", function() {
+  var header = document.getElementById("nav");
+  var sticky = header.offsetTop + 200; 
+
+  function stickyHeader() {
+    if (window.scrollY > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
     }
   }
-};
+
+  window.onscroll = function() {
+    stickyHeader();
+  };
+});
 </script>
 
 <style scoped>
+
+@keyframes slideInDown {
+    0% 
+    {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% 
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#nav.sticky {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    margin: 0;
+    padding-top: 20px;
+    height: 70px;
+    animation: slideInDown 0.5s ease-in-out;
+}
 
 #hero-main {
     height: 100vh;

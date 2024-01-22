@@ -22,24 +22,6 @@ import burgerMenu from './burgerMenu.vue'
 
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      ref: null
-    };
-  },
-  methods: {
-    handleClickHelp() {
-      this.$parent.$parent.$refs.helpRef.scrollIntoView({ behavior: 'smooth' });
-    },
-    handleClickFounders() {
-      this.$parent.$parent.$refs.foundersRef.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-};
-</script>
-
 <style scoped>
 
 .navbar-main {
@@ -96,7 +78,7 @@ export default {
     width: 0;
     padding-bottom: 20px;
     height: 1px;
-    border-bottom: 1px solid #B60D18;
+    border-bottom: 1px solid red;
     transition: all .3s;
     }
 
@@ -106,13 +88,13 @@ export default {
     width: 0;
     padding-bottom: 20px;
     height: 1px;
-    border-bottom: 1px solid #B60D18;
+    border-bottom: 1px solid red;
     transition: all .3s;
     }
 
     .list-menu-el:hover::after {
         width: 100%;
-        border-bottom: 1px solid #B60D18;
+        border-bottom: 1px solid red;
         transition: all .3s;
     }
 
