@@ -32,11 +32,11 @@
             <div class="footer-el">
                 <div class="footer-el-wrapper">
                     <h5>Odnośniki</h5>
-                    <p><a href="/raport">RAPORT</a></p>
-                    <p><a href="/darczyncy">POSTACIE</a></p>
-                    <p><a href="/wesprzyj">WESPRZYJ FUNDACJĘ</a></p>
-                    <p><a href="/statut">STATUT FUNDACJI</a></p>
-                    <p><a href="/kontakt">SKONTAKTUJ SIĘ Z NAMI</a></p>
+                    <p><router-link class="link" to="/raport">RAPORT</router-link></p>
+                    <p><router-link class="link" :to="{ path:'/', hash:'#founders'}">POSTACIE</router-link></p>
+                    <p><router-link class="link" :to="{ path:'/', hash:'#donate'}">WESPRZYJ FUNDACJĘ</router-link></p>
+                    <p><router-link class="link" to="/statut">STATUT FUNDACJI</router-link></p>
+                    <p><router-link class="link" to="/kontakt">SKONTAKTUJ SIĘ Z NAMI</router-link></p>
                 </div>
             </div>
         </div>
