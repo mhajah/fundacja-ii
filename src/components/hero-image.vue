@@ -15,6 +15,29 @@ import navbar from './navbar.vue';
 </template>
 
 <script>
+export default {
+    created () {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    unmounted () {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+      handleScroll(event) {
+        const header = document.getElementById("nav");
+        const sticky = header.offsetTop + 200; 
+
+        if (window.scrollY > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    },
+    },
+}
+</script>
+
+<!-- <script>
 document.addEventListener("DOMContentLoaded", function() {
   var header = document.getElementById("nav");
   var sticky = header.offsetTop + 200; 
@@ -31,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     stickyHeader();
   };
 });
-</script>
+</script> -->
 
 <style scoped>
 
