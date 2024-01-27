@@ -16,6 +16,11 @@ import navbar from './navbar.vue';
 
 <script>
 export default {
+    data() {
+        return {
+        ref: null
+        };
+    },
     created () {
         window.addEventListener('scroll', this.handleScroll);
     },
@@ -33,6 +38,9 @@ export default {
             header.classList.remove("sticky");
         }
     },
+        handleClick() {
+        this.$refs.aboutus.scrollIntoView({ behavior: 'smooth' });
+        }
     },
 }
 </script>
@@ -71,15 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 }
 
-#nav.sticky {
-    position: fixed;
-    top: 0;
-    background-color: black;
-    margin: 0;
-    padding-top: 20px;
-    height: 70px;
-    animation: slideInDown 0.5s ease-in-out;
-}
 
 #hero-main {
     height: 100vh;
@@ -121,6 +120,18 @@ document.addEventListener("DOMContentLoaded", function() {
     position: absolute;
     top: 85vh;
     font-size: 32px;
+}
+
+@media (min-width: 950px) {
+    #nav.sticky {
+        position: fixed;
+        top: 0;
+        background-color: black;
+        margin: 0;
+        padding-top: 20px;
+        height: 70px;
+        animation: slideInDown 0.5s ease-in-out;
+    }
 }
 
 

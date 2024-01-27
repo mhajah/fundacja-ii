@@ -22,6 +22,7 @@ import burgerMenu from './burgerMenu.vue'
 
 </template>
 
+
 <style scoped>
 
 .navbar-main {

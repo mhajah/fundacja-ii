@@ -26,24 +26,24 @@ export const helpRef = ref(null);
         <ul class="activities-list">
           <li><span>fakultety w liceach i szkołach podstawowych</span> są dla większości uczniów pierwszy kontakt z informatyką; fundacja pomaga w wynagrodzeniu prowadzących, którzy prowadzą uczniów od pierwszych kroków do medali Olimpiady Informatycznej.</li>
           <li><span>sparingi i zawody</span> zapewniają niezbędny trening uczniom, którzy walczą o tytuły najlepszych programistów i programistek w kraju; fundacja dokłada się do kosztów przygotowania zadań i nagród dla uczestników.</li>
-          <li><span>obozy naukowe</span> gromadzą uczniów z różnych szkół i są czasem intensywnej pracy: początkujący wspólnie zdobywają podstawy informatycznego fachu, zaawansowani uczą się od siebie nawzajem i przygotowują do startu w zawodach; fundacja udziela stypendiów na pokrycie kosztów dla potrzebujących uczestników oraz wspiera finansowo wynagrodzenia kadry.</li>
+          <li><span id="donate">obozy naukowe</span> gromadzą uczniów z różnych szkół i są czasem intensywnej pracy: początkujący wspólnie zdobywają podstawy informatycznego fachu, zaawansowani uczą się od siebie nawzajem i przygotowują do startu w zawodach; fundacja udziela stypendiów na pokrycie kosztów dla potrzebujących uczestników oraz wspiera finansowo wynagrodzenia kadry.</li>
         </ul>
       </div>
 
-      <div class="descriptions">
-        <h3 ref="helpRef" class="main-header3" id="donate">DLA DARCZYŃCÓW</h3>
+      <div class="descriptions"> 
+        <h3 ref="helpRef" class="main-header3" >DLA DARCZYŃCÓW</h3>
         <p class="main-paragraph">Możesz wesprzeć naszą misję poprzez darowiznę; dziękujemy za każdą wpłaconą złotówkę. Chętnych do włączenia się w życie fundacji zachęcamy też do <router-link :to="'kontakt'" class="p-link">kontaktu</router-link>. Fundacja przeznacza całość otrzymanych środków na <router-link :to="'statut'" class="p-link">działalność statutową</router-link>, taką jak projekty opisane powyżej. Wpłaty można dokonywać na konta o numerach:</p>
         <div class="account_numbers">
           <p><span>PLN</span> 88 1240 1473 1111 0011 2847 0067</p>
           <p><span>CHF</span> 97 1240 1473 1797 0011 2847 1107</p>
           <p><span>EUR</span> 65 1240 1473 1978 0011 2847 0878</p>
           <p><span>USD</span> 94 1240 1473 1787 0011 2847 0982</p>
-          <p><span>GBP</span> 98 1240 1473 1789 0011 2847 1295</p>
+          <p><span id="founders">GBP</span> 98 1240 1473 1789 0011 2847 1295</p>
         </div>
       </div>
 
       <div class="descriptions">
-        <h3 ref="foundersRef" class="main-header3" id="founders">POSTACIE</h3>
+        <h3 ref="foundersRef" class="main-header3">POSTACIE</h3>
         <p class="main-paragraph"></p>
         <div class="account_numbers">
         </div>
