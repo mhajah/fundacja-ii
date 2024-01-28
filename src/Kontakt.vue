@@ -23,7 +23,7 @@ import Footer from './components/footer.vue'
         </div>
         <div class="contact-sec email">
           <font-awesome-icon class="awesome" icon="envelope" />
-          <a href="mailto:fundacja@uwr.edu.pl">fundacja@uwr.edu.pl</a>
+          <a href="mailto:fundacja@uwr.edu.pl">fundacjaabsolwentowiiuwr@cs.uni.wroc.pl</a>
         </div>
       </div>
     
@@ -93,9 +93,13 @@ import Footer from './components/footer.vue'
 }
 
 .contact-sec > a {
-  font-size: 16px;
+  font-size: 14px;
   display: block;
-  width: 200px;
+  max-width: 300px;
+}
+
+.contact-sec:last-child > a {
+  font-size: 11px;
 }
 
 .contact-sec > .awesome {
@@ -137,6 +141,16 @@ import Footer from './components/footer.vue'
   padding: 10px 10px;
 }
 
+.contact-sec:last-child {
+    padding-right: 0;
+  }
+
+@media (min-width: 310px) {
+
+  .contact-sec:last-child > a {
+    font-size: 13px;
+  }
+}
 
 @media (min-width: 768px) {
 
@@ -149,6 +163,11 @@ import Footer from './components/footer.vue'
   .contact-sec > a {
     font-size: 18px;
     width: 250px;
+  }
+  .contact-sec:last-child > a {
+    width: 400px;
+    max-width: 400px;
+    font-size: 16px;
   }
 }
 
@@ -208,7 +227,10 @@ import Footer from './components/footer.vue'
   }
   .contact-sec > a {
     font-size: 20px;
-    width: 250px;
+  }
+  .contact-sec:last-child > a {
+    max-width: 400px;
+    font-size: 18px;
   }
   .contact {
     width: 600px;

@@ -8,7 +8,7 @@
                     <p>Fundacja Absolwentów Informatyki Uniwersytetu Wrocławskiego</p>
                     <p>ul. Joliot-Curie 15</p>
                     <p>50-523 Wrocław</p>
-                    <p>fundacja_abs@uwr.edu.pl</p>
+                    <p>fundacjaabsolwentowiiuwr@cs.uni.wroc.pl</p>
                 </div>
             </div>
             <div class="footer-el">
