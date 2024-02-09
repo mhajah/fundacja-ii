@@ -50,7 +50,7 @@ export const helpRef = ref(null);
       </div>
 
       <!-- Newsy -->
-      <div class="descriptions">
+      <!-- <div class="descriptions">
         <h3 class="main-header3">AKTUALNOŚCI</h3>
         <div v-for="news in newsStore.getLastNews()" class="news">
           <router-link :to="'news/'+news.id">
@@ -66,7 +66,7 @@ export const helpRef = ref(null);
               </div>
           </router-link>
         </div>
-      </div>
+      </div> -->
     </section>
     <Footer class="footer"/>
   </main>

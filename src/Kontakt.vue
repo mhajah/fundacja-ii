@@ -19,7 +19,7 @@ import Footer from './components/footer.vue'
         </div>
         <div class="contact-sec phone">
           <font-awesome-icon class="awesome" icon="phone" />
-          <a href="tel:+48123456789">+48 123456789</a>
+          <a href="tel:+48123456789">+48 -</a>
         </div>
         <div class="contact-sec email">
           <font-awesome-icon class="awesome" icon="envelope" />
