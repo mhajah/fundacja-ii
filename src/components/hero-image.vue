@@ -6,7 +6,7 @@ import navbar from './navbar.vue';
     <navbar id="nav" class="navbar" />
     <section id="hero-main">
         <Transition name="fade" appear>
-            <h1 class="hero-main-header">Fundacja Absolwentów Informatyki Uniwersytetu Wrocławskiego</h1>
+            <h1 class="hero-main-header">Fundacja Absolwentów Instytutu Informatyki Uniwersytetu Wrocławskiego</h1>
         </Transition>
 
         <button ref="aboutus" @click="handleClick" class="awesome"><font-awesome-icon icon="arrow-down"/></button>

@@ -27,7 +27,7 @@ export default {
 <template>
     <section class="navbar-main">
         <div class="navbar-main-logo">
-            <router-link class="link" to="/">Fundacja Absolwentów Informatyki UWr</router-link>
+            <router-link class="link" to="/">Fundacja Absolwentów Instytutu Informatyki UWr</router-link>
         </div>
         <ul class="list-menu">
           <li class="list-menu-el"><router-link v-bind:class="(kontakt1)?'k5':''" class="link" to="/raport">RAPORT</router-link></li>

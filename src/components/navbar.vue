@@ -6,9 +6,18 @@ import burgerMenu from './burgerMenu.vue'
     <Transition name="fade" appear>
     <section class="navbar-main">
         <div class="navbar-main-logo">
-            <router-link class="link" to="/">Fundacja Absolwentów Informatyki UWr</router-link>
+            <router-link class="link" to="/">Fundacja Absolwentów Instytutu Informatyki UWr</router-link>
         </div>
         <ul class="list-menu">
+          <li class="">
+
+            <div class="socials">
+                <a href="https://www.instagram.com/fundacja.ii.uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-instagram" /></a>
+                <a href="https://www.facebook.com/profile.php?id=61558673312467"><font-awesome-icon class="awesome" icon="fa-brands fa-facebook" /></a>
+                <a href="https://www.tiktok.com/@fundacja.ii.uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-tiktok" /></a>
+                <a href="https://x.com/fundacja_ii_uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-x-twitter" /></a>
+            </div>            
+          </li>  
           <li class="list-menu-el"><router-link class="link" to="/raport">RAPORT</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" :to="{ path:'/', hash:'#founders'}">POSTACIE</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" :to="{ path:'/', hash:'#donate'}">WSPOMÓŻ FUNDACJĘ</router-link></li>
@@ -24,6 +33,18 @@ import burgerMenu from './burgerMenu.vue'
 
 
 <style scoped>
+
+.awesome {
+    padding: 0 8px 0 8px;
+    font-size: 21px;
+    transition: ease-in-out 0.3s;
+}
+
+.awesome:hover {
+    color: #B60D18;
+    font-size: 24px;
+}
+
 
 .navbar-main {
     position: fixed;
@@ -49,6 +70,11 @@ import burgerMenu from './burgerMenu.vue'
      visibility: hidden;
 }
 
+.list-menu-el {
+    margin-left: 30px;
+
+}
+
 @media (max-width: 337px) {
     .navbar-main {
         width: 100vw;
@@ -71,7 +97,7 @@ import burgerMenu from './burgerMenu.vue'
     }
     .list-menu-el {
         margin-left: 30px;
-
+        font-size: 20px;
     }
     .navbar-main-logo::after {
         content: '';
@@ -114,6 +140,16 @@ import burgerMenu from './burgerMenu.vue'
         justify-content: space-around;
         font-size: 20px;
         margin-top: 30px;
+    }
+    @media (max-width: 1500px) {
+        .list-menu-el {
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 1300px) {
+        .list-menu-el {
+            font-size: 14px;
+        }
     }
     @media (min-width: 3000px) {
         .navbar-main {

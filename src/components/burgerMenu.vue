@@ -37,6 +37,15 @@ export default {
 		  <li class="sidemenu__item"><router-link @click="navOpen = !navOpen" class="link" :to="{ path:'/', hash:'#donate'}">WSPOMÓŻ FUNDACJĘ</router-link></li>
 		  <li class="sidemenu__item"><router-link class="link" to="statut">STATUT</router-link></li>
 		  <li class="sidemenu__item"><router-link class="link" to="kontakt">KONTAKT</router-link></li>
+		  <li class="">
+
+			<div class="socials">
+				<a href="https://www.instagram.com/fundacja.ii.uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-instagram" /></a>
+				<a href="https://www.facebook.com/profile.php?id=61558673312467"><font-awesome-icon class="awesome" icon="fa-brands fa-facebook" /></a>
+				<a href="https://www.tiktok.com/@fundacja.ii.uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-tiktok" /></a>
+				<a href="https://x.com/fundacja_ii_uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-x-twitter" /></a>
+			</div>            
+		</li>  
 		</ul>
 	  </div>
 	</nav>
@@ -59,6 +68,11 @@ export default {
 	  text-align: center;
 	  // box-shadow: 2px 0 3px$grey-6;
 	  // overflow-y: scroll;
+  }
+
+  .awesome {
+	padding: 25px 9px 5px 9px;
+	font-size: 23px;
   }
 
   .sidemenu {

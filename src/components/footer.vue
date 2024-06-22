@@ -1,11 +1,17 @@
 <template>
     <section class="footer-main">
-        <h6>Fundacja Absolwentów Informatyki Uniwersytetu Wrocławskiego</h6>
+        <h6>Fundacja Absolwentów Instytutu Informatyki Uniwersytetu Wrocławskiego</h6>
+        <div class="socials">
+            <a href="https://www.instagram.com/fundacja.ii.uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-instagram" /></a>
+            <a href="https://www.facebook.com/profile.php?id=61558673312467"><font-awesome-icon class="awesome" icon="fa-brands fa-facebook" /></a>
+            <a href="https://www.tiktok.com/@fundacja.ii.uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-tiktok" /></a>
+            <a href="https://x.com/fundacja_ii_uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-x-twitter" /></a>
+        </div>
         <div class="footer-mid">
             <div class="footer-el">
                 <div class="footer-el-wrapper">
                     <h5>Dane adresowe</h5>
-                    <p>Fundacja Absolwentów Informatyki Uniwersytetu Wrocławskiego</p>
+                    <p>Fundacja Absolwentów Instytutu Informatyki Uniwersytetu Wrocławskiego</p>
                     <p>ul. Joliot-Curie 15</p>
                     <p>50-523 Wrocław</p>
                     <p>fundacjaabsolwentowiiuwr@cs.uni.wroc.pl</p>
@@ -93,7 +99,7 @@ hr {
 }
 
 .footer-mid {
-    margin: 10px 45px 10px 45px;
+    margin: 0 45px 10px 45px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -116,6 +122,19 @@ span {
 }
 
 a:hover {
+    color: #B60D18;
+}
+
+.socials {
+    margin: 10px 0 0 0;
+}
+
+.awesome {
+    padding: 5px 8px 0 8px;
+    font-size: 24px;
+}
+
+.awesome:hover {
     color: #B60D18;
 }
 

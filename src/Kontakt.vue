@@ -17,14 +17,28 @@ import Footer from './components/footer.vue'
           <font-awesome-icon class="awesome" icon="fa-solid fa-location-dot" />
           <a href="https://maps.app.goo.gl/rdiDFzaxYRTcb1NL9">50-383 Wrocław, Fryderyka Joliot-Curie 15</a>
         </div>
-        <div class="contact-sec phone">
-          <font-awesome-icon class="awesome" icon="phone" />
-          <a href="tel:+48123456789">+48 -</a>
+
+        <div class="contact-sec social">
+          <font-awesome-icon class="awesome" icon="fa-brands fa-instagram" />
+          <a href="https://www.instagram.com/fundacja.ii.uwr">fundacja.ii.uwr</a>
+        </div>
+        <div class="contact-sec social">
+          <font-awesome-icon class="awesome" icon="fa-brands fa-facebook" />
+          <a href="https://www.facebook.com/profile.php?id=61558673312467">Fundacja Absolwentów Instytutu Informatyki Uniwersytetu Wrocławskiego</a>
+        </div>
+        <div class="contact-sec social">
+          <font-awesome-icon class="awesome" icon="fa-brands fa-tiktok" />
+          <a href="https://www.tiktok.com/@fundacja.ii.uwr">fundacja.ii.uwr</a>
+        </div>
+        <div class="contact-sec social">
+          <font-awesome-icon class="awesome" icon="fa-brands fa-x-twitter" />
+          <a href="https://x.com/fundacja_ii_uwr">Fundacja Absolwentów Instytutu Informatyki UWr</a>
         </div>
         <div class="contact-sec email">
           <font-awesome-icon class="awesome" icon="envelope" />
-          <a href="mailto:fundacja@uwr.edu.pl">fundacjaabsolwentowiiuwr@cs.uni.wroc.pl</a>
+          <a href="https://x.com/fundacja_ii_uwr?">fundacjaabsolwentowiiuwr@cs.uni.wroc.pl</a>
         </div>
+
       </div>
     
     <hr>
@@ -53,6 +67,8 @@ import Footer from './components/footer.vue'
 * {
   font-family: 'Exo 2';
 }
+
+
 
 .mini_hero {
   margin-top: 8vh;

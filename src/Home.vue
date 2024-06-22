@@ -42,12 +42,12 @@ export const helpRef = ref(null);
         </div>
       </div>
 
-      <div class="descriptions">
+      <!-- <div class="descriptions">
         <h3 ref="foundersRef" class="main-header3">POSTACIE</h3>
         <p class="main-paragraph"></p>
         <div class="account_numbers">
         </div>
-      </div>
+      </div> -->
 
       <!-- Newsy -->
       <!-- <div class="descriptions">
