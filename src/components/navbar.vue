@@ -18,10 +18,10 @@ import burgerMenu from './burgerMenu.vue'
                 <a href="https://x.com/fundacja_ii_uwr"><font-awesome-icon class="awesome" icon="fa-brands fa-x-twitter" /></a>
             </div>            
           </li>  
-          <li class="list-menu-el"><router-link class="link" to="/raport">RAPORT</router-link></li>
+          <!-- <li class="list-menu-el"><router-link class="link" to="/raport">RAPORT</router-link></li> -->
 		  <li class="list-menu-el"><router-link class="link" :to="{ path:'/', hash:'#founders'}">POSTACIE</router-link></li>
 		  <li class="list-menu-el"><router-link class="link" :to="{ path:'/', hash:'#donate'}">WSPOMÓŻ FUNDACJĘ</router-link></li>
-		  <li class="list-menu-el"><router-link class="link" to="/statut">STATUT</router-link></li>
+		  <!-- <li class="list-menu-el"><router-link class="link" to="/statut">STATUT</router-link></li> -->
 		  <li class="list-menu-el"><router-link class="link" to="/kontakt">KONTAKT</router-link></li>
         </ul>
         
