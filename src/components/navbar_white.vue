@@ -30,10 +30,10 @@ export default {
             <router-link class="link" to="/">Fundacja Absolwentów Instytutu Informatyki UWr</router-link>
         </div>
         <ul class="list-menu">
-          <li class="list-menu-el"><router-link v-bind:class="(kontakt1)?'k5':''" class="link" to="/raport">RAPORT</router-link></li>
+          <!--<li class="list-menu-el"><router-link v-bind:class="(kontakt1)?'k5':''" class="link" to="/raport">RAPORT</router-link></li>-->
 		  <li class="list-menu-el"><router-link v-bind:class="(kontakt2)?'k5':''" class="link" :to="{ path:'/', hash:'#founders'}">POSTACIE</router-link></li>
 		  <li class="list-menu-el"><router-link v-bind:class="(kontakt3)?'k5':''" class="link" :to="{ path:'/', hash:'#donate'}">WSPOMÓŻ FUNDACJĘ</router-link></li>
-		  <li class="list-menu-el"><router-link v-bind:class="(kontakt4)?'k5':''" class="link" to="/statut">STATUT</router-link></li>
+		  <!--<li class="list-menu-el"><router-link v-bind:class="(kontakt4)?'k5':''" class="link" to="/statut">STATUT</router-link></li>-->
 		  <li class="list-menu-el"><router-link v-bind:class="(kontakt5)?'k5':''" class="link" to="/kontakt">KONTAKT</router-link></li>
         </ul>
         <burgerMenu color="#ebebeb" fontColor="#222222" class="burger-menu"/>
